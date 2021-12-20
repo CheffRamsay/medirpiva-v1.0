@@ -1,6 +1,7 @@
 :root{
   --font: 'Lato', sans-serif;
   --color-1: #001122;
+  --color-2: #ffff;
 }
 
 
@@ -642,15 +643,6 @@ main{
 }
 
 .footer{
-	display: flex;
-	flex-direction: column;
-	position: fixed;
-	bottom: 0px;
-	width: 100%;
-	padding-left: 30px;
-	padding-top: 20px;
-	
-	background-color: #384c64;
 }
 
 
@@ -1357,8 +1349,8 @@ main{
 		position: relative;
 		left: 503px;
 		top: -20px;
-		height: 70px;
-		width: 219px;
+		height: 75px;
+		width: 230px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -1366,8 +1358,10 @@ main{
 		border-radius: 10px;
 		z-index: 2222;
 		padding: 5px;
-		background: #FFFFFF;
-		box-shadow: 0px 7px 29px rgb(100 100 111 / 80%);
+	    background-color: #31639c;
+		backdrop-filter: blur(20px);
+		/* Note: backdrop-filter has minimal browser support */
+		border-radius: 5px;
 	}
 
 
@@ -1378,12 +1372,15 @@ main{
 		position: relative;
 		font-family: var(--font);
 		font-weight: 600;
+		color: var(--color-2);
+		
 	}
 
 	.recta span{
 		width: 100%;
 		text-align: left;
 		padding-left: 4px;
+		color: var(--color-2);
 	}
 
 	.p-card::after{
@@ -1400,7 +1397,7 @@ main{
 		position: absolute;
 		width: 40px;
 		height: 40px;
-		top: -26px;
+		top: -30px;
 		right: -22px;
 		z-index: 1;
 		text-align: center;
@@ -1592,6 +1589,74 @@ main{
 	margin-bottom: 0px;
 }
 
+.footer{
+	background: linear-gradient(357.83deg, #000000 22.04%, #1D262D 100.46%);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 30px;
+	margin-top: 100px;
+}
+
+.enlaces-footer ul{
+	display: flex;
+	gap: 15px;
+	list-style-type: none;
+	margin-top: 15px;
+}
+.enlaces-footer ul li a{
+	font-family: var(--font);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 21px;
+	/* identical to box height */
+	color: #FFFFFF;
+	text-decoration: none;
+
+}
+
+.span-footer{
+	text-align: center;
+	width: 60%;
+	font-family: var(--font);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 15px;
+	text-align: center;
+	color: #FFFFFF;
+	padding: 15px;
+}
+
+.barra-con-footer a{
+	padding: 8px;
+}
+
+.barra-con-footer a img{
+	width: 20px;
+}
+
+.border-1{
+	margin-top: 20px;
+	margin-bottom: 10px;
+	border: 1px solid rgba(247, 246, 246, 0.562);
+    width: 600px;
+}
+
+.enlace-lucas span a{
+	position: relative;
+	top: 10px;
+	font-family: var(--font);
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	/* identical to box height */
+	text-align: center;
+    color: #FFFFFF;
+}
 
    
 }
