@@ -49,7 +49,7 @@ export function formulario() {
                 
                 //Si la respuesta esta ok te envia a la pag. principal
                 if(respuesta['respuesta']){
-                    window.location.href = "https://medipriva.com/";
+                    window.location.href = "https://medipriva.com/mensajeEnviado.html";
                 
                 //Si contiene algu error: popUp.
                 }else{
