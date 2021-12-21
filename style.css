@@ -4,9 +4,6 @@
   --color-2: #ffff;
 }
 
-
-
-
 /*Elimina bordes*/
 *{
   box-sizing: border-box;
@@ -642,11 +639,6 @@ main{
 
 }
 
-.footer{
-}
-
-
-
 .contenedor-footer2{
 	display: flex;
 	flex-direction: column
@@ -1015,6 +1007,82 @@ main{
 .recta{
 	display: none;
 }
+
+.footer{
+	background: linear-gradient(357.83deg, #000000 22.04%, #1D262D 100.46%);
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 30px;
+	padding-bottom: 90px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 70px;
+}
+
+.enlaces-footer ul li a{
+	font-family: var(--font);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 21px;
+	/* identical to box height */
+	color: #FFFFFF;
+	text-decoration: none;
+
+}
+
+
+.enlaces-footer ul{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	gap: 15px;
+	list-style-type: none;
+	margin-top: 15px;
+	padding: 0px;
+}
+
+.span-footer{
+	text-align: center;
+	width: 100%;
+	font-family: var(--font);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 15px;
+	text-align: center;
+	color: #FFFFFF;
+	padding: 15px;
+}
+
+.barra-con-footer a img{
+	width: 20px;
+}
+
+.border-1{
+	margin-top: 20px;
+	margin-bottom: 10px;
+	border: 1px solid rgba(247, 246, 246, 0.562);
+    width: 200px;
+}
+
+.enlace-lucas span a{
+	position: relative;
+	top: 10px;
+	font-family: var(--font);
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	/* identical to box height */
+	text-align: center;
+    color: #FFFFFF;
+}
+
+
+
 
 
 @media (min-width: 400px){
@@ -1600,34 +1668,12 @@ main{
 }
 
 .enlaces-footer ul{
-	display: flex;
-	gap: 15px;
-	list-style-type: none;
-	margin-top: 15px;
+	flex-direction: row;
 }
-.enlaces-footer ul li a{
-	font-family: var(--font);
-	font-style: normal;
-	font-weight: 500;
-	font-size: 18px;
-	line-height: 21px;
-	/* identical to box height */
-	color: #FFFFFF;
-	text-decoration: none;
 
-}
 
 .span-footer{
-	text-align: center;
 	width: 60%;
-	font-family: var(--font);
-	font-style: normal;
-	font-weight: 500;
-	font-size: 13px;
-	line-height: 15px;
-	text-align: center;
-	color: #FFFFFF;
-	padding: 15px;
 }
 
 .barra-con-footer a{
@@ -1638,25 +1684,7 @@ main{
 	width: 20px;
 }
 
-.border-1{
-	margin-top: 20px;
-	margin-bottom: 10px;
-	border: 1px solid rgba(247, 246, 246, 0.562);
-    width: 600px;
-}
 
-.enlace-lucas span a{
-	position: relative;
-	top: 10px;
-	font-family: var(--font);
-	font-style: normal;
-	font-weight: normal;
-	font-size: 14px;
-	line-height: 17px;
-	/* identical to box height */
-	text-align: center;
-    color: #FFFFFF;
-}
 
    
 }
