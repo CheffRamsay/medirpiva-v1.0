@@ -85,7 +85,7 @@
 	     	$mail->Host = "mail.medipriva.com";
 			$mail->SMTPAuth   = true;                                   // Enable SMTP authentication
 			$mail->Username = 'test@medipriva.com';
-            $mail->Password = 'b{u!aKg$*BzKdKhW';                                  // SMTP password
+            $mail->Password = '+Lc&unpq-j1~';                                 // SMTP password
 			$mail->SMTPSecure = 'ssl';                                  // Enable TLS encryption, `ssl` also accepted
 			$mail->Port       = 465;
             // TCP port to connect to
@@ -94,8 +94,8 @@
             //$mail->addAddress('asesorprepagassalud@gmail.com', 'Maxi');
             //$mail->addCC('stormbringer.lu@gmail.com');
     
-            $mail->setFrom('stormbringer.lu@gmail.com', 'Medipriva - Contacto');
-            $mail->addAddress('asesorprepagassalud@gmail.com', 'Alphcode');
+            $mail->setFrom('lucas_.caceres@hotmail.com.ar', 'Medipriva - Contacto');
+            $mail->addAddress('asesorprepagassalud@gmail.com', 'Maxi');
             $mail->addCC('stormbringer.lu@gmail.com');
 			// Content
 			$mail->Subject = 'Nuevo contacto';

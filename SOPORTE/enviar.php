@@ -12,7 +12,7 @@ $mail->SMTPAuth = true;
 $mail->SMTPSecure = true;
 
 $mail->Username = 'test@medipriva.com';
-$mail->Password = 'b{u!aKg$*BzKdKhW';
+$mail->Password = '+Lc&unpq-j1~';
 
 $mail->From = 'test@medipriva.com';
 $mail->FromName = "remitente";

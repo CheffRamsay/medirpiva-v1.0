@@ -1010,9 +1010,7 @@ main{
 
 .footer{
 	background: linear-gradient(357.83deg, #000000 22.04%, #1D262D 100.46%);
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-top: 30px;
+	padding: 30px 20px 90px 20px;
 	padding-bottom: 90px;
 	display: flex;
 	justify-content: center;
@@ -1079,6 +1077,10 @@ main{
 	/* identical to box height */
 	text-align: center;
     color: #FFFFFF;
+}
+
+.enlace-icono{
+	cursor: pointer;
 }
 
 
@@ -1682,6 +1684,11 @@ main{
 
 .barra-con-footer a img{
 	width: 20px;
+}
+
+.border-1{
+	
+    width: 500px;
 }
 
 
