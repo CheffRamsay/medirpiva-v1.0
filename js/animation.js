@@ -8,6 +8,7 @@ export function  animation() {
     const $loader = d.querySelector("#loader-wrapper");
     const $elipse = d.querySelector(".elipse");
     const $familiaImg = d.querySelector(".familiaSlider");
+    const $rectanguloDialog = d.querySelector(".recta");
 
     const cb = (entries) =>{
          entries.forEach(entry =>{
@@ -31,5 +32,6 @@ export function  animation() {
       $loader.parentElement.removeChild($loader);
       $elipse.classList.add("fadeInUp");
       $familiaImg.classList.add("fadeInUp1");
+      $rectanguloDialog.classList.add("fadeInUp2");
     });
 }

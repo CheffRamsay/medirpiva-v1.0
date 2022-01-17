@@ -25,10 +25,18 @@ html{
 }
 
 .fadeInUp1{
-	animation: fadeInUp1 1s forwards;
+	animation: fadeInUp1 0.5s forwards;
     -webkit-animation-name: fadeInUp1;
 	-webkit-animation-duration: 1s;
 	-webkit-animation-fill-mode: forwards;
+}
+
+.fadeInUp2{
+	animation: fadeInUp1 500ms ease-in-out forwards;
+    -webkit-animation-name: fadeInUp1;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-fill-mode: forwards;
+	--webkit-animation-timing-function: ease-in-out
 }
 
 @-webkit-keyframes fadeInUp{
@@ -46,6 +54,20 @@ html{
 }
 
 @keyframes fadeInUp1{
+	0%{
+		opacity: 0;
+		-webkit-transform: translateY(100%);
+		trasnform: translateY(100%);
+	}
+	100%{
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+
+	}
+}
+
+@keyframes fadeInUp2{
 	0%{
 		opacity: 0;
 		-webkit-transform: translateY(100%);
@@ -1443,6 +1465,7 @@ main{
 	}
 
 	.recta{
+		opacity: 0;
 		position: relative;
 		left: 503px;
 		top: -20px;
