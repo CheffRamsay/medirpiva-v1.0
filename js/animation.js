@@ -5,6 +5,9 @@ export function  animation() {
     const w = window;
     const sectionsToAnimate = d.querySelectorAll(".anim");
     const $titulo = d.querySelector(".titulo");
+    const $loader = d.querySelector("#loader-wrapper");
+    const $elipse = d.querySelector(".elipse");
+    const $familiaImg = d.querySelector(".familiaSlider");
 
     const cb = (entries) =>{
          entries.forEach(entry =>{
@@ -23,5 +26,10 @@ export function  animation() {
       });
     //A cada section le agregamos atributo observe
     sectionsToAnimate.forEach(el => observer.observe(el));
-
+    
+    w.addEventListener('load', e =>{
+      $loader.parentElement.removeChild($loader);
+      $elipse.classList.add("fadeInUp");
+      $familiaImg.classList.add("fadeInUp1");
+    });
 }
