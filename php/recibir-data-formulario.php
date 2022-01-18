@@ -85,7 +85,7 @@
 	     	$mail->Host = "mail.medipriva.com";
 			$mail->SMTPAuth   = true;                                   // Enable SMTP authentication
 			$mail->Username = 'test@medipriva.com';
-            $mail->Password = '+Lc&unpq-j1~';                                 // SMTP password
+            $mail->Password = 'B&jozwtLEl[V';                                 // SMTP password
 			$mail->SMTPSecure = 'ssl';                                  // Enable TLS encryption, `ssl` also accepted
 			$mail->Port       = 465;
             // TCP port to connect to

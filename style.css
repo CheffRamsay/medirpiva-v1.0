@@ -4,10 +4,6 @@
   --color-2: #ffff;
 }
 
-html{
-	
-}
-
 /*Elimina bordes*/
 *{
   box-sizing: border-box;
@@ -103,7 +99,8 @@ html{
    opacity: 0;
    position: absolute;
    width: 290px;
-   bottom: -544px;
+   top: 779px;
+ 
    
 }
 
@@ -363,6 +360,12 @@ nav a{
 	}
 }
 
+.img-elipse-container{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin-top: 115px;
+}
 
 
 
@@ -383,7 +386,7 @@ nav a{
     display: flex;
 	flex-direction: column-reverse;
 	align-items: center;
-	margin-bottom: 280px;
+	
 }
 
 @keyframes rebote{
@@ -450,14 +453,11 @@ nav a{
    justify-content: center;
 }
 
-.elipse{
-  
-}
 
 .familiaSlider{
 	width: 320px;
-	position: absolute;
-	bottom: -598px;
+	position: relative;
+	
 }
 
 .familiaSliderConCompu{
@@ -825,7 +825,6 @@ main{
 
 .barra-con-redes{
 	position: relative;
-	top: 70px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -1467,8 +1466,8 @@ main{
 	.recta{
 		opacity: 0;
 		position: relative;
-		left: 503px;
-		top: -20px;
+		left: 148px;
+		top: -138px;
 		height: 75px;
 		width: 230px;
 		display: flex;
@@ -1478,9 +1477,8 @@ main{
 		border-radius: 10px;
 		z-index: 2222;
 		padding: 5px;
-	    background-color: #31639c;
+		background-color: #31639c;
 		backdrop-filter: blur(20px);
-		/* Note: backdrop-filter has minimal browser support */
 		border-radius: 5px;
 	}
 
@@ -1505,38 +1503,37 @@ main{
 
 	.p-card::after{
 
-		font-family: "Material Icons";
+	    font-family: "Material Icons";
 		font-size: 25px;
 		font-weight: lighter;
 		content: "\f1df";
 		color: white;
-		box-shadow: 0px 7px 29px rgba(100, 100, 111, 0.2);
+		box-shadow: 0px 7px 29px rgb(100 100 111 / 20%);
 		background: rgb(255,90,95);
-        background: linear-gradient(90deg, rgba(255,90,95,1) 41%, rgba(236,38,38,1) 100%);
+		background: linear-gradient(90deg, rgba(255,90,95,1) 41%, rgba(236,38,38,1) 100%);
 		border-radius: 150%;
 		position: absolute;
 		width: 40px;
 		height: 40px;
 		top: -30px;
-		right: -22px;
+		right: -34px;
 		z-index: 1;
 		text-align: center;
 	}
 
 	.elipse{
-		position: relative;
-		left: 114px;
-		top: -30px;
+		position: absolute;
+		left: 86px;
+		top: -130px;
 		width: 313px;
-	
 	}
 
 	.familiaSlider{
-		position: relative;
+		position: absolute;
 		width: 407px;
 		height: 340px;
-		bottom: -33px;
-		right: 240px;
+		bottom: -149px;
+		right: 42px;
 	}
 
 	.familiaSliderConCompu{
