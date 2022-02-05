@@ -11,20 +11,18 @@ export function  animation() {
     const $rectanguloDialog = d.querySelector(".recta");
 
     const cb = (entries) =>{
-         entries.forEach(entry =>{
-            //console.log(entries)
-            if(entry.isIntersecting){
-              entry.target.classList.add("fadeInUp");
-            }
-          
-            
-        })
+      entries.forEach(entry =>{
+          //console.log(entries)
+          if(entry.isIntersecting){
+            entry.target.classList.add("fadeInUp");
+          }
+      })
     }
 
     //Recibe una callback y una serie de opciones 
-      const observer = new IntersectionObserver(cb, {
+    const observer = new IntersectionObserver(cb, {
 
-      });
+    });
     //A cada section le agregamos atributo observe
     sectionsToAnimate.forEach(el => observer.observe(el));
     

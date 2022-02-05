@@ -22,7 +22,6 @@ export function headerMenus(){
     
     d.addEventListener("click", (e)=>{
         if(e.target.matches(".hambur")){
-            
            MenuAbierto();
         }
 
@@ -31,7 +30,7 @@ export function headerMenus(){
         }
         
         if(screen.width <= 950){
-            ClickEnlaceCerrarMenu(e); 
+           ClickEnlaceCerrarMenu(e); 
         }
     });
 

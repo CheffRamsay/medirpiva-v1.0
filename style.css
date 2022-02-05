@@ -14,21 +14,24 @@
 
 /*ANIMACIONES*/
 .fadeInUp{
-	animation: fadeInUp 1.9s forwards;
+	-webkit-animation: fadeInUp 1.9s forwards;
+	        animation: fadeInUp 1.9s forwards;
     -webkit-animation-name: fadeInUp;
 	-webkit-animation-duration: 1.9s;
 	-webkit-animation-fill-mode: forwards;
 }
 
 .fadeInUp1{
-	animation: fadeInUp1 0.5s forwards;
+	-webkit-animation: fadeInUp1 0.5s forwards;
+	        animation: fadeInUp1 0.5s forwards;
     -webkit-animation-name: fadeInUp1;
 	-webkit-animation-duration: 1s;
 	-webkit-animation-fill-mode: forwards;
 }
 
 .fadeInUp2{
-	animation: fadeInUp1 500ms ease-in-out forwards;
+	-webkit-animation: fadeInUp1 500ms ease-in-out forwards;
+	        animation: fadeInUp1 500ms ease-in-out forwards;
     -webkit-animation-name: fadeInUp1;
 	-webkit-animation-duration: 1s;
 	-webkit-animation-fill-mode: forwards;
@@ -43,9 +46,21 @@
 	}
 	100%{
 		opacity: 1;
-		-webkit-transform: none;
 		transform: none;
 		
+	}
+}
+
+@-webkit-keyframes fadeInUp1{
+	0%{
+		opacity: 0;
+		-webkit-transform: translateY(100%);
+		trasnform: translateY(100%);
+	}
+	100%{
+		opacity: 1;
+		transform: none;
+
 	}
 }
 
@@ -57,7 +72,19 @@
 	}
 	100%{
 		opacity: 1;
-		-webkit-transform: none;
+		transform: none;
+
+	}
+}
+
+@-webkit-keyframes fadeInUp2{
+	0%{
+		opacity: 0;
+		-webkit-transform: translateY(100%);
+		trasnform: translateY(100%);
+	}
+	100%{
+		opacity: 1;
 		transform: none;
 
 	}
@@ -71,7 +98,6 @@
 	}
 	100%{
 		opacity: 1;
-		-webkit-transform: none;
 		transform: none;
 
 	}
@@ -98,25 +124,31 @@
 .elipse{
    opacity: 0;
    position: absolute;
-   width: 290px;
+   width: 309px;
    top: 779px;
  
    
 }
 
 .lo{
-	animation: animate__fadeInDown;
-	animation-delay: 1s!important;
+	-webkit-animation: animate__fadeInDown;
+	        animation: animate__fadeInDown;
+	-webkit-animation-delay: 1s!important;
+	        animation-delay: 1s!important;
 }
 
 .lo2{
-    animation: animate__fadeInDown;
-	animation-delay: 1.2s!important;
+    -webkit-animation: animate__fadeInDown;
+            animation: animate__fadeInDown;
+	-webkit-animation-delay: 1.2s!important;
+	        animation-delay: 1.2s!important;
 }
 
 .btn-info{
-	animation: animate__fadeInDown;
-	animation-delay: 1.3s!important;
+	-webkit-animation: animate__fadeInDown;
+	        animation: animate__fadeInDown;
+	-webkit-animation-delay: 1.3s!important;
+	        animation-delay: 1.3s!important;
 }
 
 body{
@@ -258,9 +290,8 @@ label{
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
-	scroll-behavior: smooth;
-	-webkit-box-shadow: 1px 6px 13px 4px rgba(0,0,0,0.67); 
-    box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.67);
+	scroll-behavior: smooth; 
+ box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.67);
 }
 
 .nav-link{
@@ -318,15 +349,54 @@ nav a{
 }
 
 .popIn {
-	animation-name: popIn;
+	-webkit-animation-name: popIn;
+	        animation-name: popIn;
 
 }
 
 .oculto{
 	
-	animation-duration: .8s;
-    animation-fill-mode: forwards;
+	-webkit-animation-duration: .8s;
+	
+	        animation-duration: .8s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
     opacity: 0;
+}
+
+@-webkit-keyframes popIn {
+	0% {
+		transform: scale3d(0, 0, 0);
+	}
+
+	20% {
+		opacity: 1;
+	}
+
+	40% {
+		-webkit-animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+		        animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+		transform: scale3d(1.08, 1.08, 1.08);
+	}
+
+	60% {
+		-webkit-animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+		        animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+		transform: scale3d(1, 1, 1);
+	}
+
+	80% {
+		-webkit-animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+		        animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+		transform: scale3d(1.03, 1.03, 1.03);
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+		        animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+		transform: scale3d(1, 1, 1);
+	}
 }
 
 @keyframes popIn {
@@ -339,23 +409,27 @@ nav a{
 	}
 
 	40% {
-		animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+		-webkit-animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+		        animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
 		transform: scale3d(1.08, 1.08, 1.08);
 	}
 
 	60% {
-		animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+		-webkit-animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+		        animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
 		transform: scale3d(1, 1, 1);
 	}
 
 	80% {
-		animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+		-webkit-animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+		        animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
 		transform: scale3d(1.03, 1.03, 1.03);
 	}
 
 	100% {
 		opacity: 1;
-		animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+		-webkit-animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+		        animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 		transform: scale3d(1, 1, 1);
 	}
 }
@@ -387,6 +461,15 @@ nav a{
 	flex-direction: column-reverse;
 	align-items: center;
 	
+}
+
+@-webkit-keyframes rebote{
+	0%{
+	   transform: translateY(-10%);
+	  }
+	100%{
+		transform: translateY(0%);
+	}  
 }
 
 @keyframes rebote{
@@ -1079,6 +1162,10 @@ main{
 
 }
 
+.enlaces-footer ul li a:hover{
+	color: #F2F2F2;
+}
+
 
 .enlaces-footer ul{
 	display: flex;
@@ -1276,6 +1363,10 @@ main{
 	margin-bottom: 3px;
 	letter-spacing: 0.3;
 	line-height: 25px;
+}
+
+.menu li a:hover {
+	color: #F2F2F2;
 }
 
 .menu li img{
@@ -1478,7 +1569,8 @@ main{
 		z-index: 2222;
 		padding: 5px;
 		background-color: #31639c;
-		backdrop-filter: blur(20px);
+		-webkit-backdrop-filter: blur(20px);
+		        backdrop-filter: blur(20px);
 		border-radius: 5px;
 	}
 

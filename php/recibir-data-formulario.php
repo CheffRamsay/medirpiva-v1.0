@@ -82,10 +82,10 @@
 		try {
             //$mail->SMTPDebug = 2;                                       // Enable verbose debug output
 			$mail->isSMTP();                                            // Set mailer to use SMTP
-	     	$mail->Host = "mail.medipriva.com";
+	     	$mail->Host = "mail.medipriva.com.ar";
 			$mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-			$mail->Username = 'test@medipriva.com';
-            $mail->Password = 'B&jozwtLEl[V';                                 // SMTP password
+			$mail->Username = 'test2@medipriva.com.ar';
+            $mail->Password = 'usW3mHG;!l%v';                                 // SMTP password
 			$mail->SMTPSecure = 'ssl';                                  // Enable TLS encryption, `ssl` also accepted
 			$mail->Port       = 465;
             // TCP port to connect to
@@ -132,3 +132,10 @@
 
 
     echo json_encode($respuesta);
+
+
+
+
+
+
+    https://jsonplaceholder.typicode.com/users/
