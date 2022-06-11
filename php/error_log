@@ -5,3 +5,11 @@
 [05-Nov-2021 08:38:52 America/New_York] PHP Warning:  Use of undefined constant “smtp” - assumed '“smtp”' (this will throw an Error in a future version of PHP) in /home/medip93/public_html/php/recibir-data-formulario.php on line 91
 [05-Nov-2021 09:48:03 America/New_York] PHP Warning:  Use of undefined constant “smtp” - assumed '“smtp”' (this will throw an Error in a future version of PHP) in /home/medip93/public_html/php/recibir-data-formulario.php on line 91
 [05-Nov-2021 10:40:09 America/New_York] PHP Warning:  Use of undefined constant “smtp” - assumed '“smtp”' (this will throw an Error in a future version of PHP) in /home/medip93/public_html/php/recibir-data-formulario.php on line 91
+[04-May-2022 22:18:14 America/New_York] PHP Parse error:  syntax error, unexpected ',' in /home/medip93/public_html/php/envio-ws.php on line 13
+[04-May-2022 22:19:17 America/New_York] PHP Parse error:  syntax error, unexpected ',' in /home/medip93/public_html/php/envio-ws.php on line 13
+[04-May-2022 22:20:20 America/New_York] PHP Parse error:  syntax error, unexpected ',' in /home/medip93/public_html/php/envio-ws.php on line 13
+[04-May-2022 22:21:25 America/New_York] PHP Parse error:  syntax error, unexpected ',' in /home/medip93/public_html/php/envio-ws.php on line 13
+[04-May-2022 22:36:07 America/New_York] PHP Parse error:  syntax error, unexpected ',' in /home/medip93/public_html/php/envio-ws.php on line 13
+[04-May-2022 22:41:17 America/New_York] PHP Parse error:  syntax error, unexpected ',' in /home/medip93/public_html/php/envio-ws.php on line 13
+[04-May-2022 22:45:09 America/New_York] PHP Parse error:  syntax error, unexpected ',' in /home/medip93/public_html/php/envio-ws.php on line 13
+[04-May-2022 22:48:50 America/New_York] PHP Parse error:  syntax error, unexpected ',' in /home/medip93/public_html/php/envio-ws.php on line 13
