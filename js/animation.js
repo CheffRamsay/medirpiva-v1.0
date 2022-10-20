@@ -20,9 +20,8 @@ export function  animation() {
     }
 
     //Recibe una callback y una serie de opciones 
-    const observer = new IntersectionObserver(cb, {
+    const observer = new IntersectionObserver(cb, {});
 
-    });
     //A cada section le agregamos atributo observe
     sectionsToAnimate.forEach(el => observer.observe(el));
     

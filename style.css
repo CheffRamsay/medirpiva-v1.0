@@ -130,6 +130,16 @@
    
 }
 
+.ws-container img{
+	
+	position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 60px;
+    right: 40px;
+    z-index: 40;
+}
+
 .lo{
 	-webkit-animation: animate__fadeInDown;
 	        animation: animate__fadeInDown;
@@ -230,7 +240,7 @@ label{
     align-items: center;
     gap: 52px;
     /* margin-bottom: -36px; */
-    top: -203px;
+    top: -152px;
     width: 100%;
     position: fixed;
 }
@@ -1164,7 +1174,7 @@ main{
 .cruz{
 	width: 30px;
     position: relative;
-    top: 429px;
+    top: 485px;
     right: 33px;
 }
 
@@ -1291,6 +1301,13 @@ main{
 
 
 @media (min-width: 1000px){
+
+	.ws-container img{
+	
+		
+		bottom: 50px;
+	
+	}
 
 	.conectate{
 		display: none;
