@@ -8,6 +8,14 @@ export function formulario() {
     const comentario = document.querySelector('#mensaje');
     const option = document.querySelector('.select-id option');
     const btnEnviar = document.querySelector("#btn-id");
+
+    const fechaActual = () =>{
+        let fecha = new Date();
+        const f = fecha.toLocaleString();
+        return f;
+    }
+
+    fechaActual();
     
     //ValidacionFormualrio
     const expresiones = {
@@ -60,7 +68,6 @@ export function formulario() {
         }
     }
 
-    
     inputs.forEach((input) =>{
         input.addEventListener('keyup', validarFormulario);
         input.addEventListener('blur', validarFormulario);
@@ -140,16 +147,17 @@ let peticionGoogleSheets = {
     headers: {
         'Content-Type': 'application/json'
 
-},
-body: JSON.stringify({
-    "Nombre": formulario.nombre.value,
-    "Dni": formulario.dni.value,
-    "Correo": formulario.correo.value,
-    "Telefono": formulario.telefono.value,
-    "Localidad":select.options[select.selectedIndex].value,
-    "Comentario": comentario.value
-})
-
+    },
+    body: JSON.stringify({
+        "Nombre":     formulario.nombre.value,
+        "Dni":        formulario.dni.value,
+        "Correo":     formulario.correo.value,
+        "Telefono":   formulario.telefono.value,
+        "Localidad":  select.options[select.selectedIndex].value,
+        "Fecha":      fechaActual(),
+        "Comentario": comentario.value
+         
+    })
 }
 
 let datos = new FormData(formulario);
@@ -165,7 +173,7 @@ if(campos.nombre && campos.dni && campos.correo && campos.telefono && campos.loc
     //Se envia el mensaje al numero ws con los datos del formulario
     fetch ('php/envio-ws.php',peticion)  
     .then( respuestaWs =>{
-        console.log(respuestaWs.status);
+        //console.log(respuestaWs.status);
         if(respuestaWs.status==200){
             
             //Si el mensaje de ws se envia correctamente se guarda en la base de datos de Google Sheets
