@@ -23,7 +23,10 @@ export function  animation() {
     const observer = new IntersectionObserver(cb, {});
 
     //A cada section le agregamos atributo observe
-    sectionsToAnimate.forEach(el => observer.observe(el));
+    sectionsToAnimate.forEach(el => {
+      el.style.opacity = "0";
+      observer.observe(el);
+    })
     
     w.addEventListener('load', e =>{
       $loader.parentElement.removeChild($loader);
