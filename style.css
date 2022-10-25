@@ -135,8 +135,8 @@
 	position: fixed;
     width: 60px;
     height: 60px;
-    bottom: 60px;
-    right: 40px;
+    bottom: 90px;
+    right: 20px;
     z-index: 40;
 }
 
@@ -479,6 +479,8 @@ nav a{
 	flex-direction: column-reverse;
 	align-items: center;
 	
+	
+	
 }
 
 .label-input-container svg{
@@ -661,6 +663,11 @@ font-family: var(--font)!important;
 
 .container-general-form{
   padding-top: 50px;
+  background-image: url("./img/testimonial-two-shape-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  
 }
 .minh-100 {
   height: 80vh;
@@ -1380,6 +1387,8 @@ main{
 }
 
 .menu-container {
+	background-color: #f2f5f9;
+	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.16);
 	height: 85px;
 	flex-direction: row;
 	justify-content: center;
@@ -1397,7 +1406,7 @@ main{
 }
 
 .menu {
-	height: 85%;
+	height: 100%;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -1850,7 +1859,7 @@ main{
     height: 529px;
     position: relative;
     right: -34px;
-	top: -15px;
+	top: 55px;
     margin-top: 10px;
     z-index: 2;
     padding: 20px;
@@ -1935,7 +1944,7 @@ main{
 	}
 
 	.menu-container{
-	    
+	   
 	}
 
 	.carousel-item{
