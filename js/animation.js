@@ -7,8 +7,10 @@ export function  animation() {
     const $titulo = d.querySelector(".titulo");
     const $loader = d.querySelector("#loader-wrapper");
     const $elipse = d.querySelector(".elipse");
+    const $elipse2 = d.querySelector(".elipse-2");
     const $familiaImg = d.querySelector(".familiaSlider");
-    const $rectanguloDialog = d.querySelector(".recta");
+    //const $rectanguloDialog = d.querySelector(".recta");
+    const $banner = d.querySelector(".banner-promo");
 
     const cb = (entries) =>{
       entries.forEach(entry =>{
@@ -31,7 +33,9 @@ export function  animation() {
     w.addEventListener('load', e =>{
       $loader.parentElement.removeChild($loader);
       $elipse.classList.add("fadeInUp");
+      $elipse2.classList.add("fadeInUp1");
       $familiaImg.classList.add("fadeInUp1");
-      $rectanguloDialog.classList.add("fadeInUp2");
+      //$rectanguloDialog.classList.add("fadeInUp2");
+      $banner.classList.add("shadow-drop-2-center");
     });
 }

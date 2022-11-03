@@ -454,11 +454,51 @@ nav a{
 	}
 }
 
+
+.shadow-drop-2-center {
+	-webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes shadow-drop-2-center {
+	0% {
+	  -webkit-transform: translateZ(0);
+			  transform: translateZ(0);
+	  -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+			  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+	100% {
+	  -webkit-transform: translateZ(50px);
+			  transform: translateZ(50px);
+	  -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+			  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+	}
+  }
+  @keyframes shadow-drop-2-center {
+	0% {
+	  -webkit-transform: translateZ(0);
+			  transform: translateZ(0);
+	  -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+			  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+	100% {
+	  -webkit-transform: translateZ(50px);
+			  transform: translateZ(50px);
+	  -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+			  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+	}
+  }
+  
+  
+  
+  
+
 .img-elipse-container{
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	margin-top: 115px;
+	align-items: center;
+	margin-top: -360px;
 }
 
 /*****************************************FORMULARIO******************************************************/
@@ -472,12 +512,12 @@ nav a{
 }
 
 .banner-promo{
-	width: 420px;
+	width: 100%;
 	height: 115px;
 	background-color: #001122;
 	position: absolute;
 	left: 0;
-	top: -131px;
+	top: -145px;
 	border-radius: 5px;
 	background: linear-gradient(180.87deg, #23539C 0.75%, #0B1D4E 99.25%);
 	overflow: hidden;	
@@ -721,12 +761,8 @@ font-family: var(--font)!important;
 
 .container-general-form{
   padding-top: 50px;
-  background-image: url("./img/testimonial-two-shape-1.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  
-  
-}
+  background: linear-gradient(100.45deg, rgba(46, 74, 136, 0.49) -13.6%, rgba(46, 74, 136, 0.49) -4.58%, rgba(66, 159, 92, 0.36293) 48.11%, rgba(85, 152, 181, 0.24) 79.37%);}
+
 .minh-100 {
   height: 80vh;
 
@@ -1015,6 +1051,8 @@ main{
 	width: 100%;
 	background-color: #ffff;
     padding: 20px 20px 30px 20px;
+	position: relative;
+	top: 150px;
 
 }
 
@@ -1344,6 +1382,18 @@ main{
 	cursor: pointer;
 }
 
+.elipse{
+	position: relative;
+	top: 235px;
+	width: 313px;
+}
+
+.elipse-2{
+	width: 100%;
+	position: relative;
+	top: 613px;
+}
+
 
 
 
@@ -1614,20 +1664,12 @@ main{
     display: none;
 }
 
-
-
-
 .back{
-
- 
   background-position: 20% 100%;
-  
 }
 
 .back-blog{
-	
   background-position: 20% 100%;
-
 }
 
 .text-bene{
@@ -1644,11 +1686,11 @@ main{
 }
 
 
-	.principal-hamburguesa{
-		display: flex;
-		justify-content: flex-end;
-		margin-left: -50px;
-	}
+.principal-hamburguesa{
+	display: flex;
+	justify-content: flex-end;
+	margin-left: -50px;
+}
     
 	
 	.enlaces{
@@ -1752,18 +1794,31 @@ main{
 		text-align: center;
 	}
 
+	.img-elipse-container{
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 115px;
+	}
+
 	.elipse{
 		position: absolute;
-		left: 86px;
-		top: -130px;
+		left: 93px;
+		top: 103px;
 		width: 313px;
+	}
+
+	.elipse-2{
+		position: relative;
+		top: -90px;
 	}
 
 	.familiaSlider{
 		position: absolute;
 		width: 407px;
 		height: 340px;
-		bottom: -149px;
+		bottom: 20px;
 		right: 42px;
 	}
 
@@ -1879,12 +1934,9 @@ main{
 		font-weight: 600;
 	}
 
-
-
-
 	.wave{
-	margin-top: -100px;
-}
+	    margin-top: -100px;
+    }
 
 .contenido-cuadro p{
 	font-size: 4vw;
