@@ -9,6 +9,10 @@ export function formulario() {
     const option = document.querySelector('.select-id option');
     const btnEnviar = document.querySelector("#btn-id");
 
+    //¿SOS AFILIADO? Seccion
+    const selectorSosAfiliado = document.querySelector(".afiliadoConsulta");
+    const form = document.querySelector("#formvisibility");
+
     const fechaActual = () =>{
         let fecha = new Date();
         const f = fecha.toLocaleString();
@@ -21,7 +25,7 @@ export function formulario() {
     const expresiones = {
         usuario: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo
         nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
-        dni: /^[0-9_.+-]{8,10}$/, // 8 numeros.
+        //dni: /^[0-9_.+-]{8,10}$/, // 8 numeros.
         password: /^.{4,12}$/, // 4 a 12 digitos.
         correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
         telefono: /^[0-9_.+-]{5,14}$/ // 7 a 14 numeros.
@@ -30,10 +34,10 @@ export function formulario() {
 
     const campos = {
         nombre: false,
-        dni: false,
+        //dni: false,
         correo: false,
         telefono: false,
-        localidad: false
+        localidad: true
     }
 
     const validarFormulario = (e) =>{
@@ -41,14 +45,19 @@ export function formulario() {
             case "nombre":
                 validarCampo(expresiones.nombre, e.target, 'nombre');
             break;
-            case "dni":
+            /*
+             case "dni":
                 validarCampo(expresiones.dni, e.target, 'dni');
             break;
+            */
             case "correo":
                 validarCampo(expresiones.correo, e.target, 'correo');
             break;
             case "telefono":
                 validarCampo(expresiones.telefono, e.target, 'telefono');
+            break;
+            case "localidad":
+                validarCampo(expresiones.localidad, e.target, 'localidad');
             break;
         }
 
@@ -73,65 +82,6 @@ export function formulario() {
         input.addEventListener('blur', validarFormulario);
     })
 
-    //Validar Select Localidades
-    const valorDeLocalidades = select.options[select.selectedIndex].value;
-
-    select.addEventListener('change', () =>{
-        if(select.value == '1'){
-           select.classList.add("formulario-incorrecto");
-           select.classList.remove('formulario-correcto');
-           campos.localidad = false;
-        }else{
-            select.classList.add('formulario-correcto');
-            campos.localidad = true;
-        }
-    });
- 
-
-    //Agregando Localidades al Formulario
-    const urlLocalidades = 'https://apis.datos.gob.ar/georef/api/localidades?provincia=buenos%20aires&campos=nombre&max=941';
-    const options = {
-        method: "GET"
-    };
-
-    function ordenar(a,b){
-        return a - b;
-    }
-
-    const agregarLocalidadesFormulario = async() =>{
-        try{
-            //Traer las localidades
-            const respuesta = await fetch(urlLocalidades, options);
-            //console.log(respuesta);
-            //Si la respuesta es correcta
-            if(respuesta.status === 200){
-         
-              const datos = await respuesta.json();
-              const localidades = datos.localidades;
-              //Extraemos todos nombres de las localidades.
-              const LocalidadesPrincipales = localidades.map(function(dato){
-                  return `<option>${dato.nombre}</option>`;
-              });
-              //Colocamos la etiqueta select con las localidades ordenadas alfabeticamente con sort().
-              select.innerHTML += LocalidadesPrincipales.sort();
-    
-            }else if(respuesta.status === 401){
-                console.warn("Error 401")
-            }else if(respuesta.status === 404){
-                console.log('Error 404');
-            }else{
-                console.warn('Error desconocido')
-            }
-            
-        }catch(error){
-            console.log(error);
-        }
-    }
-
-    agregarLocalidadesFormulario();
-
-    
-
 //Envio de datos a GoogleSheets y envio de mensaje por Whatsapp
 formulario.addEventListener('submit', (e) => {
     
@@ -150,10 +100,10 @@ let peticionGoogleSheets = {
     },
     body: JSON.stringify({
         "Nombre":     formulario.nombre.value,
-        "Dni":        formulario.dni.value,
-        "Correo":     formulario.correo.value,
+        //"Dni":        formulario.dni.value,
+        "Email":     formulario.correo.value,
         "Telefono":   formulario.telefono.value,
-        "Localidad":  select.options[select.selectedIndex].value,
+        "Localidad":  formulario.localidad.value,
         "Fecha":      fechaActual(),
         "Comentario": comentario.value
          
@@ -166,9 +116,9 @@ let peticion = {
     body:datos,
 }
 //console.log(formulario.localidad)
-const urlGoogleSheetsDB = 'https://sheet.best/api/sheets/0fe838bf-55c3-40a8-aaba-6d8a3b2acaa5';
+const urlGoogleSheetsDB = 'https://sheetdb.io/api/v1/8pblf8b3eglqi';
 
-if(campos.nombre && campos.dni && campos.correo && campos.telefono && campos.localidad){
+if(campos.nombre  /*&& campos.dni*/ && campos.correo && campos.telefono && campos.localidad){
     
     //Se envia el mensaje al numero ws con los datos del formulario
     fetch ('php/envio-ws.php',peticion)  
@@ -179,7 +129,8 @@ if(campos.nombre && campos.dni && campos.correo && campos.telefono && campos.loc
             //Si el mensaje de ws se envia correctamente se guarda en la base de datos de Google Sheets
             fetch(urlGoogleSheetsDB, peticionGoogleSheets)
             .then(respuestaGoogleSheets =>{
-                if(respuestaGoogleSheets.status==200){
+                console.log(respuestaGoogleSheets);
+                if(respuestaGoogleSheets.status==201){
                     window.location.href = "https://medipriva.com.ar/mensajeEnviado.html";
                     //console.log("Mensaje enviado y subido a la base de datos")
                 }
@@ -207,6 +158,14 @@ if(campos.nombre && campos.dni && campos.correo && campos.telefono && campos.loc
     })
 }
 
+});
+
+selectorSosAfiliado.addEventListener("change", () => {
+    const seleccion = selectorSosAfiliado.options[selectorSosAfiliado.selectedIndex].value;
+
+    enlace.style.display = (seleccion === "1") ? "block" : "none";
+    form.style.display = (seleccion === "2") ? "block" : "none";
+    
 });
        
 	 

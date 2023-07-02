@@ -4,6 +4,7 @@ import { animation } from "./animation.js";
 import { formulario } from "./formulario.js";
 
 
+
 $( document ).ready(function() {
     $('#myModal').modal('toggle')
     })

@@ -4,16 +4,15 @@ $nombre = $_POST['nombre'];
 $correo = $_POST['correo'];
 $telefono = $_POST['telefono'];
 $localidad = $_POST['localidad'];
-$dni = $_POST['dni'];
 $comentario = $_POST['mensaje'];
     
 
     $nuevoContactoTxt = "Hola maxi te solicito información te paso mís datos personales que me pediste:"; 
     $nombreTexto = "Nombre: ";
-    $dniTexto = "Dni: ";
+    //$dniTexto = "Dni: ";
     $mailTexto = "Email: ";
     $telefonoTexto = "Telefono: ";
-    $dniTexto = "Dni: ";
+    //$dniTexto = "Dni: ";
     $mensajeTexto = "Mensaje: ";
     $localidadesTexto = "Localidad: ";
     $comentarioTexto = 'Mensaje: ';
@@ -21,11 +20,11 @@ $comentario = $_POST['mensaje'];
 
 
 function send_whatsapp($message){
-        $phone="+5491134212930";  // Enter your phone number here
-        $apikey="794762";       // Enter your personal apikey received in step 3 above
+        //$phone="+5491134212930";  // Enter your phone number here
+        //$apikey="6090736";       // Enter your personal apikey received in step 3 above
 
-       //$phone="+5491124635748";   //Enter your phone number here
-       //$apikey="141361";          //Enter your personal apikey received in step 3 above
+       $phone="+5491124635748";   //Enter your phone number here
+       $apikey="141361";          //Enter your personal apikey received in step 3 above
 
         $url='https://api.callmebot.com/whatsapp.php?source=php&phone='.$phone.'&text='.urlencode($message).'&apikey='.$apikey;
 
@@ -57,7 +56,8 @@ function send_whatsapp($message){
                   .$mailTexto .$correo .'\n' 
                   .$telefonoTexto .$telefono .'\n' 
                   .$localidadesTexto .$localidad .'\n'
-                  .$dniTexto .$dni .'\n'
+                  .$comentarioTexto .$comentario 
+                  //.$dniTexto .$dni .'\n'
                   );
   
     

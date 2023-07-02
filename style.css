@@ -131,14 +131,17 @@
 }
 
 .ws-container img{
-	
+	left: 50%;
+	transform: translate(-50%, -50%);
 	position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 60px;
-    right: 40px;
+    bottom: -15px;
     z-index: 40;
+    width: 50px;
+    height: 50px;
 }
+	
+	
+
 
 .lo{
 	-webkit-animation: animate__fadeInDown;
@@ -188,6 +191,11 @@ label{
 .logo-container{
 	padding-top: 10px;
 	padding-bottom: 10px;
+}
+
+.logo-container img{
+	width: 220px;
+    position: relative;
 }
 
 .enlaces-container a {
@@ -454,13 +462,46 @@ nav a{
 	}
 }
 
+
+.shadow-drop-2-center {
+	-webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes shadow-drop-2-center {
+	0% {
+			transform: translateZ(0);
+			box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+	100% {
+			transform: translateZ(50px);
+			box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+	}
+  }
+  @keyframes shadow-drop-2-center {
+	0% {
+			transform: translateZ(0);
+			box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+	100% {
+			transform: translateZ(50px);
+			box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+	}
+  }
+  
+  
+  
+  
+
 .img-elipse-container{
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	margin-top: 115px;
+	align-items: center;
+	margin-top: -520px;
 }
 
+/*****************************************FORMULARIO******************************************************/
 
 .contenedor h1{
 	font-size: 26px;
@@ -470,6 +511,63 @@ nav a{
 	margin-top: 100px;
 }
 
+.banner-promo{
+	width: 100%;
+	height: 115px;
+	background-color: #001122;
+	position: absolute;
+	left: 0;
+	top: -145px;
+	border-radius: 5px;
+	background: linear-gradient(180.87deg, #23539C 0.75%, #0B1D4E 99.25%);
+	overflow: hidden;	
+}
+
+.banner-promo .text-container{
+	position: absolute;
+	background: transparent;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+.banner-promo .text-container h5{
+	font-family: var(--font);
+	color: white;
+	font-weight: 800;
+	padding: 10px;
+}
+
+.banner-promo .circulo{
+    position: absolute;
+	border-radius: 50%;
+	background: linear-gradient(90deg, #E12179 0%, #311996 100%);
+}
+
+.circulo:first-child{
+	width: 45px;
+	height: 45px;
+	left: -8px;
+	top: -5px;
+}
+
+.circulo:nth-child(2){
+	width: 35px;
+	height: 35px;
+	bottom: -9px;
+	left: 90px;
+}
+
+.circulo:nth-child(3){
+	width: 30px;
+	height: 30px;
+	top: 18px;
+	right: 40px;
+}
+
+
 .titulo-form{
     z-index: 1000;
 }
@@ -478,6 +576,8 @@ nav a{
     display: flex;
 	flex-direction: column-reverse;
 	align-items: center;
+	
+	
 	
 }
 
@@ -652,16 +752,34 @@ font-family: var(--font)!important;
 
 /*FORMULARIO*/
 
+.logo-container-mobile{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
 .conectate{
-  text-align: center;
-  font-size: 26px;
-  font-weight: 500;
+	text-align: center;
+	padding-top: 10px;
+    font-size: 19px;
+    font-weight: 600;
+	color: #0E3D86;
+    LINE-HEIGHT: 28PX;
+	font-family: "Montserrat", Sans-serif;
  
 }
 
 .container-general-form{
   padding-top: 50px;
+  /*
+   background-image: url("./img/Default_backgroud_to_website_change_colours_blue_and_violet_to_0_7a39d092-a109-4240-b608-bf671969080c_1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  */
+ background: linear-gradient(100.45deg, rgba(46, 74, 136, 0.49) -13.6%, rgba(46, 74, 136, 0.49) -4.58%, rgba(66, 159, 92, 0.36293) 48.11%, rgba(85, 152, 181, 0.24) 79.37%);
 }
+  
+
 .minh-100 {
   height: 80vh;
 
@@ -950,7 +1068,15 @@ main{
 	width: 100%;
 	background-color: #ffff;
     padding: 20px 20px 30px 20px;
+	position: relative;
+	top: 25px;
 
+}
+
+.form-style .banner-promo-container img{
+	width: 100%;
+	margin-bottom: 24px;
+	background-color: #000000;
 }
 
 .boton-enviar{
@@ -974,6 +1100,7 @@ main{
 	align-items: center;
 	color: #fff;
 	height: 100px;
+	width: 100%;
 	background-color: var(--color-1);
 }
 
@@ -1279,6 +1406,18 @@ main{
 	cursor: pointer;
 }
 
+.elipse{
+	position: relative;
+	top: 235px;
+	width: 313px;
+}
+
+.elipse-2{
+	width: 100%;
+	position: relative;
+	top: 560px;
+}
+
 
 
 
@@ -1286,9 +1425,9 @@ main{
 @media (min-width: 400px){
 	.form-style{
 		width: 100%;
-		height: 460px;
 		background-color: #ffff;
 		padding: 20px 20px 20px 20px;
+		top: 23px;
 	}
 	
 	.drop-desktop{
@@ -1302,9 +1441,17 @@ main{
 
 @media (min-width: 1000px){
 
-	.ws-container img{
-		bottom: 50px;
+	.logo-container-mobile{
+		display: none;
+	}
 
+	.ws-container img{
+		bottom: -7px;
+		position: fixed;
+		width: 60px;
+		height: 60px;
+		z-index: 40;
+		left: 95%;
 	}
 
 	.conectate{
@@ -1347,16 +1494,18 @@ main{
 
 .barra-con-redes{
 	position: relative;
-	display: flex;
+    display: flex;
     flex-direction: row;
-	justify-content: flex-start;
+    /* justify-content: flex-start; */
     color: #fff;
-    width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-	position: relative;
-	top: 20px;
-	right: 35px;
+    width: 140vw;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    position: absolute;
+    /* top: 0; */
+    /* right: 35px; */
+    bottom: -122px;
+    height: 150px;
 }
 
 .btn-info{
@@ -1380,6 +1529,8 @@ main{
 }
 
 .menu-container {
+	background-color: #f2f5f9;
+	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.16);
 	height: 85px;
 	flex-direction: row;
 	justify-content: center;
@@ -1397,7 +1548,7 @@ main{
 }
 
 .menu {
-	height: 85%;
+	height: 100%;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -1547,20 +1698,12 @@ main{
     display: none;
 }
 
-
-
-
 .back{
-
- 
   background-position: 20% 100%;
-  
 }
 
 .back-blog{
-	
   background-position: 20% 100%;
-
 }
 
 .text-bene{
@@ -1577,11 +1720,11 @@ main{
 }
 
 
-	.principal-hamburguesa{
-		display: flex;
-		justify-content: flex-end;
-		margin-left: -50px;
-	}
+.principal-hamburguesa{
+	display: flex;
+	justify-content: flex-end;
+	margin-left: -50px;
+}
     
 	
 	.enlaces{
@@ -1626,13 +1769,14 @@ main{
 	}
 
 	.recta{
+		display: none;
 		opacity: 0;
 		position: relative;
 		left: 148px;
 		top: -138px;
 		height: 75px;
 		width: 230px;
-		display: flex;
+		/*display: flex;*/
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
@@ -1684,18 +1828,31 @@ main{
 		text-align: center;
 	}
 
+	.img-elipse-container{
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 115px;
+	}
+
 	.elipse{
 		position: absolute;
-		left: 86px;
-		top: -130px;
+		left: 93px;
+		top: 103px;
 		width: 313px;
+	}
+
+	.elipse-2{
+		position: relative;
+		top: -90px;
 	}
 
 	.familiaSlider{
 		position: absolute;
 		width: 407px;
 		height: 340px;
-		bottom: -149px;
+		bottom: 20px;
 		right: 42px;
 	}
 
@@ -1767,7 +1924,6 @@ main{
 	.container-general-form{
 		position: relative;
 		top: -12.5px;
-		height: 579px;
 		padding-top: 0px;
 	}
 
@@ -1811,12 +1967,9 @@ main{
 		font-weight: 600;
 	}
 
-
-
-
 	.wave{
-	margin-top: -100px;
-}
+	    margin-top: -100px;
+    }
 
 .contenido-cuadro p{
 	font-size: 4vw;
@@ -1847,10 +2000,8 @@ main{
 
 .form-style{
 	width: 420px;
-    height: 529px;
     position: relative;
     right: -34px;
-	top: -15px;
     margin-top: 10px;
     z-index: 2;
     padding: 20px;
@@ -1935,7 +2086,7 @@ main{
 	}
 
 	.menu-container{
-	    
+	   
 	}
 
 	.carousel-item{
