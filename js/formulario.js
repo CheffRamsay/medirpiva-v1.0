@@ -9,10 +9,13 @@ export function formulario() {
     const option = document.querySelector('.select-id option');
     const btnEnviar = document.querySelector("#btn-id");
 
+<<<<<<< HEAD
     //¿SOS AFILIADO? Seccion
     const selectorSosAfiliado = document.querySelector(".afiliadoConsulta");
     const form = document.querySelector("#formvisibility");
 
+=======
+>>>>>>> d84720425f5f97523bd5bef8e2d5381e9073b3a3
     const fechaActual = () =>{
         let fecha = new Date();
         const f = fecha.toLocaleString();
@@ -100,10 +103,17 @@ let peticionGoogleSheets = {
     },
     body: JSON.stringify({
         "Nombre":     formulario.nombre.value,
+<<<<<<< HEAD
         //"Dni":        formulario.dni.value,
         "Email":     formulario.correo.value,
         "Telefono":   formulario.telefono.value,
         "Localidad":  formulario.localidad.value,
+=======
+        "Dni":        formulario.dni.value,
+        "Correo":     formulario.correo.value,
+        "Telefono":   formulario.telefono.value,
+        "Localidad":  select.options[select.selectedIndex].value,
+>>>>>>> d84720425f5f97523bd5bef8e2d5381e9073b3a3
         "Fecha":      fechaActual(),
         "Comentario": comentario.value
          
