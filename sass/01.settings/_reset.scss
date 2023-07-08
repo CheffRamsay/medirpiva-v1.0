@@ -1,0 +1,34 @@
+/*Elimina bordes*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    scroll-behavior: smooth;
+}
+
+/*Evitamos problemas con las imagenes*/
+img, picture, video, iframe, figure{
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  /*Opcional*/object-fit: cover;
+  /*Opcional*/object-fit: center center;
+}
+
+a{
+  display: block;
+}
+
+p a{
+  display: inline;
+}
+
+li{
+  list-style-type: none;
+}
+
+body{
+ 
+}
