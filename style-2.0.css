@@ -47,6 +47,30 @@ font-face {
   src: url("../settings/Montserrat-Thin.ttf") format("truetype");
 }
 
+header {
+  background-image: url("/img/backgreen.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar-toggler {
+  border: none !important;
+}
+
+.nav-item a {
+  font-family: "Mont";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22.4px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
 /*
 @import '/sass/02.tools/*';
 @import '/sass/03.utilities/*';
@@ -2213,9 +2237,6 @@ progress {
   .gy-xxl-5 {
     --bs-gutter-y: 3rem;
   }
-}
-body {
-  background-color: rgb(187, 107, 107);
 }
 
 /*# sourceMappingURL=style-2.0.css.map */
