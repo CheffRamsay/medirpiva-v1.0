@@ -2,6 +2,11 @@
     border: none!important;
 }
 
+.container-nav{
+    padding: $padding-R-L-mobile!important;
+    gap: 20px;
+}
+
 .nav-item a{
     font-family: 'Mont';
     font-size: 16px;
@@ -15,5 +20,25 @@
 .custom-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
+
+@media (min-width: $breakpoint-nav-large) {
+    // Estilos específicos para la media query de tamaño medio
+    .navbar-expand-lg{
+        height: 100px;
+    } 
+
+    .container-nav{
+        padding: $padding-R-L-desk!important;
+        
+    }
+
+ 
+  }
+
+  @media (min-width: $breakpoint-nav-largex2) {
+    .navbar-expand-lg .navbar-collapse {
+        justify-content: flex-end;
+    }
+  }
   
 
