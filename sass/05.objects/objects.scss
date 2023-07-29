@@ -1,0 +1,29 @@
+.o-text-h1{
+    @include h1header(48px, 1.3);
+    padding-top: 30px;
+    
+}
+
+.o-text-h2{
+    @include h1header(32px, 1.3);
+}
+
+@media (min-width: $breakpoint-nav-large) {
+    .o-text-h1{
+        @include h1header(60px, 1.3);
+        text-align: left;
+        width: 500px;
+    }
+
+    .o-text-h2{
+        text-align: left;
+    }
+}
+
+@media (min-width: $breakpoint-nav-largex2){
+    .o-text-h1{
+        width: 615px;
+    }
+}
+
+

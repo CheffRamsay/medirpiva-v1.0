@@ -34,15 +34,7 @@ export function headerMenus(){
         }
     });
 
-    w.addEventListener("resize", (e)=>{
-        if(screen.width <= 1000){
-            containerMenu.classList.add("menu-cerrado");
-          
-        }else{
-            containerMenu.classList.remove("menu-cerrado"); 
-            containerMenu.classList.remove("menu-abierto");
-        }
-    });
+
     
     /*Efecto scroll menu
     

@@ -1,0 +1,51 @@
+.formulario__input-error{
+	font-size: 10px;
+	margin-left: 2px;
+	margin-bottom: 0px;
+	display: none;
+}
+
+.formulario__input-error-activo{
+	display: block;
+}
+
+.c-header{
+	.c-header__flex{
+		.c-formulario{
+			form{
+				padding: 40px;
+				border-radius: 10px;
+				background-color: $color-white;
+				.afiliadoConsulta{
+					margin-bottom: 16px;
+				}
+				.form-group{
+					.label-input-container{
+						margin-bottom: 16px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: $breakpoint-nav-large) {
+	.c-header{
+		.c-header__flex{
+			.c-formulario{
+				width: 360px;
+			}
+		}
+	}
+
+}
+
+@media (min-width: $breakpoint-nav-largex2) {
+	.c-header{
+		.c-header__flex{
+			.c-formulario{
+				width: 450px;
+			}
+		}
+	}
+}

@@ -36,6 +36,6 @@ export function  animation() {
       $elipse2.classList.add("fadeInUp1");
       $familiaImg.classList.add("fadeInUp1");
       //$rectanguloDialog.classList.add("fadeInUp2");
-      $banner.classList.add("shadow-drop-2-center");
+      //$banner.classList.add("shadow-drop-2-center");
     });
 }

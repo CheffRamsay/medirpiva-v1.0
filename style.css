@@ -192,7 +192,7 @@ label{
 	justify-content: space-between;
     background-color: #001122;
     align-items: center;
-       padding: 10px 0px 20px 0px;
+    padding: 10px 0px 20px 0px;
 }
 
 .logo-container{
@@ -326,7 +326,7 @@ label{
 	justify-content: space-between;
 	align-items: flex-start;
 	scroll-behavior: smooth; 
- box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.67);
+    box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.67);
 }
 
 .nav-link{
@@ -354,8 +354,6 @@ label{
 	position: relative;
 	top: -6px;
 	right:10px;
-
-
 
 }
 
@@ -613,13 +611,15 @@ nav a{
     display: flex;
 	flex-direction: column-reverse;
 	align-items: center;
-	
-	
-	
+}
+
+.label-input-container{
+	margin-bottom: 16px!important;
 }
 
 .label-input-container svg{
 	fill: #384c64!important;
+	
 }
 
 

@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    
-   
-    
+<head> 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 	<meta name="google-site-verification" content="eLk2G8wf7MObZB0TQF26OuqVoRbCzIB36eExxGmfXX8"/>
     <meta name="description" content="Obra Social Prepaga. Ofrecemos: Importantes descuentos por hijo, medico a domicilio, odontologia general 100%, nutricionista, oftalmologica (lentes de contacto )">
-    <link rel="stylesheet" href="style.css">
+   
+	<link rel="stylesheet" href="style-2.0.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 	<link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
     <!--GOOGLE FONTS LINKS-->
@@ -25,7 +23,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
      -->
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 	<link rel = "canonical" href = "https://www.medipriva.com.ar/"/>
 	<!--Google search console-->
@@ -42,22 +39,21 @@
 	</script>
 	<!-- End Google Tag Manager -->
 	
-
-	
 </head>
 
 <script  src="js/app.js" type="module" defer></script>
 <body> 
 	<!-- Google Tag Manager (noscript) -->
-		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KJ26H3G"
-		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KJ26H3G"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
    <!--Loader General-->
    <div id="loader-wrapper">
       <img src="./img/ring-loader.gif" alt="Loader">
    </div>
-   <!--Pre Header-->
-   <section class="pre-header-container" id="inicio">
+   <!--Pre Header
+
+    <section class="pre-header-container" id="inicio">
 	   <div class="enlaces-container">
           <a href="https://www.instagram.com/medipriva/?hl=es-la" target="_blank"><img class="img" src="img/instagram.svg" width="20" loading="eager" alt="logo instagram"></a>
           <a class="enlace" href="https://www.facebook.com/mediprivasalud" target="_blank"><img src="img/facebook.svg" width="20" loading="eager" alt="facebook logo"></a>
@@ -66,14 +62,20 @@
       </div>
     </section>
 
-	<!--Nav-Footer-->
+   -->
+  
+
+	<!--Nav-Footer
 	<div class="header-footer-container">
 		<div class="header-footer">
 			<img class="hambur" src="img/justificar-alinear.svg" width="35" alt="hamburguesa">
 		</div>
 	</div>
-	 <!--Nav-->
-	 <section class="menu-container">
+	
+	-->
+	
+	 <!--Nav
+	<section class="menu-container">
 		<div class="logo-container">
 			<a href="https://medipriva.com.ar"><img src="img/sancor-logo.png" loading="eager" alt="Logo Medipriva" width="228"> </a>
 		 </div>
@@ -86,8 +88,103 @@
 		<div class="cruz-container">
 			<img class="cruz" src="img/cerrar.svg" alt="close" width="50px">
 		</div>
-	  </section>
+	 </section>
+	
+	
+	-->
+	 
 </header>
+
+<header class="c-header">
+	<nav class="navbar navbar-expand-lg navbar-light">
+		<div class="container container-nav">
+		<a class="navbar-brand" href="#"><img src="./img/logo-new.png" alt="Logo Medipriva"></a>
+		<button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+			<li class="nav-item">
+				<a class="nav-link" aria-current="page" href="#">Beneficios</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Clinicas</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Planes</a>
+			</li>
+			</ul>
+		</div>
+		</div>
+	</nav> 
+	<br>
+	<div class="c-header__flex text-form-container">
+		<div class="c-header__text">
+			<h1 class="o-text-h1">COTIZÁ TU PLAN DE MEDICINA PREPAGA</h1>
+			<h2 class="o-text-h2">HASTA UN 25% DE DESCUENTO</h2>
+		</div>
+
+		<div class="c-formulario">
+			<form class="form-style" method="post" id="datos_formulario">
+
+				<select class="afiliadoConsulta label-input-container form-select form-control" aria-label="Default select example">
+					<option>¿Es Afiliado?</option>
+					<option value="1">SOY AFILIADO</option>
+					<option value="2">NO SOY AFILIADO</option>
+				</select>
+				<a id="enlace" href="https://www.sancorsalud.com.ar/contacto"
+					style="display: none; text-align: center; padding-top: 10px;">Para atención a Afiliados Acceder aquí</a>
+			
+				<div class="scroll form form-group is-invalid" id="formvisibility" style="display: none;">
+					<div class="label-input-container" id="grupo-nombre">
+						<input class="rounded form-control" type="text" name="nombre" id="nombre" placeholder="Nombre">
+						<p class="formulario__input-error">El Nombre tiene que ser de 4 a 16 dígitos y solo puede contener letras
+						</p>
+					</div>
+					<!--
+								 <div class="label-input-container" id="grupo-dni">
+									 <label for="dni" class="label labeldni">DNI</label>
+									 <input class="rounded form-control" type="text" name="dni" id="dni">
+									 <p class="formulario__input-error">DNI debe tener 8 numeros, sin letras</p>
+								   </div>
+				 
+								 -->
+			
+					<div class="label-input-container" id="grupo-localidad">
+						<input type="text" name="localidad" class="rounded form-control">
+						<p class="formulario__input-error">El Nombre tiene que ser de 4 a 16 dígitos y solo puede contener letras
+						</p>
+					</div>
+					<div class="label-input-container" id="grupo-telefono">
+						
+						<input class="rounded form-control" type="text" name="telefono" id="telefono">
+						<p class="formulario__input-error">ingrese su número de teléfono</p>
+					</div>
+					<div class="label-input-container" id="grupo-correo">
+						<input class="rounded form-control" type="email" name="correo" id="correo">
+						<p class="formulario__input-error">ingrese su dirección de email</p>
+					</div>
+					<div class="form-group label-input-container">
+						<textarea class="form-control" name="mensaje" rows="3" id="mensaje"></textarea>
+					</div>
+					<div class="loader">
+						<img class="" src="./img/rolling.gif" alt="" width="30">
+					</div>
+					<div class="form-grop col-md-12 boton-enviar">
+						<button class="btn btn-danger btn-block btn-enviar font-weight-bold" id="btn-id">PEDIR COTIZACIÓN</button>
+					</div>
+			
+				</div>
+			
+			</form>
+		</div>
+	</div>
+				
+	 
+	
+</header>
+
+
 
     
 <div class="container-general-form" id="contacto">
@@ -98,7 +195,6 @@
 		<div class="imagenes-slider">
 		
 			<div class="img-elipse-container">
-<<<<<<< HEAD
 				 <img class="elipse-2" src="./img/Ellipse-blaco.svg" loading="lazy" alt="elipse-blanco">
                  <img class="elipse" src="img/elipse1.svg" loading="lazy" alt="Elipse">
 			     <img class="familiaSlider" src="img/familiaSlider1.png" loading="lazy" class="" alt="Elipse">
@@ -109,11 +205,6 @@
 					<a href="https://api.whatsapp.com/send?phone=541156161836&text=Solicito%20informacion%20" target="_blank"><img src="img/whatsapp-blanco.svg" alt="WhatsApp"></a>
 					<a href="https://web.telegram.org/#/im?p=@sancorsaludstaffmedico" target="_blank"><img src="img/telegrama-blanco.svg" alt="Telegram"></a>
 				 </div>
-=======
-				 <img class="elipse-2" src="./img/Ellipse-blaco.svg" alt="elipse-blanco">
-                 <img class="elipse" src="img/elipse1.svg" loading="eager" alt="Elipse">
-			     <img class="familiaSlider" src="img/familiaSlider1.png" loading="eager" class="" alt="Elipse">
->>>>>>> d84720425f5f97523bd5bef8e2d5381e9073b3a3
 			</div>
 			
 		</div>
@@ -133,90 +224,6 @@
 		</div>
 
 	
-		
-		<form class="form-style" method="post" id="datos_formulario" >
-<<<<<<< HEAD
-		   <div class="banner-promo-container">
-				<!--
-				<div class="banner-promo">
-					<div class="circulo"></div>
-					<div class="circulo"></div>
-					<div class="circulo"></div>
-					<div class="text-container">
-						<h5>HASTA 25% OFF ABONANDO
-							CON TARJETA DE CRÉDITO</h5>
-					</div>
-					
-				</div>	
-				-->
-				<img src="./img/newbanner.png" alt="Banner promo" loading="lazy">
-		   </div>
-		   <select class="afiliadoConsulta label-input-container form-select form-control" aria-label="Default select example">
-				<option>¿Es Afiliado?</option>
-				<option value="1">SOY AFILIADO</option>
-				<option value="2">NO SOY AFILIADO</option>
-		   </select>
-		   <a id="enlace" href="https://www.sancorsalud.com.ar/contacto" style="display: none; text-align: center; padding-top: 10px;">Para atención a Afiliados Acceder aquí</a>
-
-		   <div class="scroll form form-group is-invalid" id="formvisibility" style="display: none;">
-=======
-	    <div class="banner-promo-container">
-			<div class="banner-promo">
-				<div class="circulo"></div>
-				<div class="circulo"></div>
-				<div class="circulo"></div>
-				<div class="text-container">
-					<h5>HASTA 30% OFF ABONANDO
-						CON TARJETA DE CRÉDITO O CBU</h5>
-				</div>
-				
-			</div>
-		</div>
-		   <div class="scroll form form-group is-invalid">
->>>>>>> d84720425f5f97523bd5bef8e2d5381e9073b3a3
-		  	    <div class="label-input-container" id="grupo-nombre">
-			    	<label for="Nombre" class="label labelnombre">Nombre</label>
-			    	<input class="rounded form-control" type="text" name="nombre" id="nombre">
-					<p class="formulario__input-error">El Nombre tiene que ser de 4 a 16 dígitos y solo puede contener letras</p>
-				</div>
-				<!--
-                <div class="label-input-container" id="grupo-dni">
-		    	    <label for="dni" class="label labeldni">DNI</label>
-		    		<input class="rounded form-control" type="text" name="dni" id="dni">
-					<p class="formulario__input-error">DNI debe tener 8 numeros, sin letras</p>
-		  		</div>
-
-				-->
-		  		
-				  <div class="label-input-container" id="grupo-localidad">
-		    	    <label for="localidad" class="label labellocalidad">Localidad</label>
-					<input type="text" name="localidad" class="rounded form-control">
-					<p class="formulario__input-error">El Nombre tiene que ser de 4 a 16 dígitos y solo puede contener letras</p>
-		  		</div>
-		  		<div class="label-input-container" id="grupo-telefono">
-		  			<label for="telefono" class="label labeltelefono">Teléfono</label>
-		  			<input class="rounded form-control" type="text" name="telefono" id="telefono">
-					  <p class="formulario__input-error">ingrese su número de teléfono</p>
-		  		</div>
-		  		<div class="label-input-container" id="grupo-correo">
-		  			<label for="email" class="label labelemail ">Email</label>
-		  		    <input class="rounded form-control" type="email" name="correo" id="correo">
-					<p class="formulario__input-error">ingrese su dirección de email</p>
-		  		</div>
-		        <div class="form-group label-input-container">
-		            <label for="mensaje">Comentario</label>
-		            <textarea class="form-control" name="mensaje" rows="3" id="mensaje"></textarea>
-		        </div>
-				<div class="loader">
-					<img class="" src="./img/rolling.gif" alt="" width="30">
-				</div>
-				<div class="form-grop col-md-12 boton-enviar">
-					<button class="btn btn-danger btn-block btn-enviar font-weight-bold" id="btn-id">PEDIR COTIZACIÓN</button>
-				</div>
-
-			</div>
-					
-		</form>
 	</div>
 
 	
@@ -284,11 +291,7 @@
 	</div>
 </section>
 
-<div class="wave">
-	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-    <path fill="#001122" fill-opacity="1" d="M0,192L80,202.7C160,213,320,235,480,234.7C640,235,800,213,960,218.7C1120,224,1280,256,1360,272L1440,288L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
-    </svg>	
-</div>	
+
 
 <main class="conetenedor-main">	
     <section class="contenedor sobre-nosotros">
@@ -523,9 +526,8 @@
 			
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<!--JavaScript de Bootstrap -->
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>   
 		   
 		
 

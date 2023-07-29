@@ -3,8 +3,14 @@
 }
 
 .container-nav{
-    padding: $padding-R-L-mobile!important;
+    padding: 0px!important;
     gap: 20px;
+}
+
+.navbar-collapse{
+    ul{
+        gap: 10px;
+    }
 }
 
 .nav-item a{
@@ -28,16 +34,23 @@
     } 
 
     .container-nav{
-        padding: $padding-R-L-desk!important;
+        
         
     }
-
- 
-  }
+}
 
   @media (min-width: $breakpoint-nav-largex2) {
     .navbar-expand-lg .navbar-collapse {
         justify-content: flex-end;
+    }
+
+    .nav-item a{
+        font-weight: 500;
+        color: rgba(20, 0, 90, 0.644);
+        &:hover{
+            color: $color-blue;
+        }
+        
     }
   }
   

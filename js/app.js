@@ -5,11 +5,6 @@ import { formulario } from "./formulario.js";
 
 
 
-$( document ).ready(function() {
-    $('#myModal').modal('toggle')
-    })
-
-
 
 
 
