@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*Elimina bordes*/
 * {
   margin: 0;
@@ -213,7 +214,6 @@ font-face {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 16px;
 }
 .c-main .c-main__clinicas h1 {
   color: #8C989C;
@@ -224,6 +224,25 @@ font-face {
   font-weight: 900;
   line-height: 52px;
   letter-spacing: 0.8px;
+}
+.c-main .c-main__clinicas .accordion-header button {
+  color: #6B6B6B;
+  font-family: Mont;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 16.4px; /* 102.5% */
+  letter-spacing: 0.106px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+}
+.c-main .c-main__clinicas .accordion-header button .icono {
+  transition: transform 0.6s; /* Transición para la rotación */
+}
+.c-main .c-main__clinicas .accordion-header .accordion-button[aria-expanded=true] .icono {
+  transform: rotate(45deg);
 }
 
 @media (min-width: 1000px) {

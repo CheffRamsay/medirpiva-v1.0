@@ -47,10 +47,37 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
-        padding: $padding-360-mobile;
+       
         
         h1{
             @include h2(40);
+        }
+
+        .accordion-header{
+           
+           button{
+            color: #6B6B6B;
+            font-family: Mont;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 16.4px; /* 102.5% */
+            letter-spacing: 0.106px;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 40px;
+
+            .icono{
+                transition: transform 0.6s; /* Transición para la rotación */
+            }
+            
+           }
+
+           .accordion-button[aria-expanded="true"] .icono {
+            transform: rotate(45deg);
+          }
         }
     }
 }
