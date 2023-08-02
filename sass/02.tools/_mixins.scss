@@ -19,3 +19,12 @@
     letter-spacing: 0.8px;
 }
 
+@mixin p($font-size){
+    color: #5C5776;
+    text-align: center;
+    font-family: Mont;
+    font-size: $font-size;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}

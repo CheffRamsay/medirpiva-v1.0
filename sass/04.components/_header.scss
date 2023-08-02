@@ -2,7 +2,7 @@
     background-image: url('img/backgreen.png');
     background-repeat: no-repeat;
     background-size: cover;
-    padding: $padding-R-L-mobile;
+    padding: 0px 16px 40px 16px;
 
     &__flex{
         flex-direction: column;
@@ -19,6 +19,10 @@
         background-repeat: no-repeat;
         background-size: cover;
         padding: $padding-R-L-desk;
+        padding-bottom: 90px!important;
+        height: 660px;
+        
+        
 
         &__flex{
             flex-direction: row;

@@ -1,0 +1,76 @@
+.c-main{
+    padding: $padding-360-mobile;
+    .c-main__beneficios{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+
+        h1{
+            @include h2(40);
+        }
+
+        p{
+            @include p(20);
+            max-width: 450px;
+        }
+
+        .c-main__beneficios--cards{
+             display: grid;
+             grid-template-columns: 1fr; /* Por defecto, una columna */
+             gap: 20px; /* Espacio entre las cards */
+
+            .c-main__beneficios--card{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                img{
+                    width: 50px;
+                }
+                span{
+                    text-align: left;
+                    color: #5C5776;
+                    font-family: Mont;
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 22.4px; /* 160% */
+                }
+            }
+        }
+    }
+
+    .c-main__clinicas{
+        padding-top: 50px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: $padding-360-mobile;
+        
+        h1{
+            @include h2(40);
+        }
+    }
+}
+
+@media (min-width: $breakpoint-nav-large) {
+    .c-main{
+        padding-top: 100px;
+        .c-main__beneficios{
+           
+            .c-main__beneficios--cards{
+                grid-template-columns: 1fr 1fr; /* Dos columnas en desktop */
+                .c-main__beneficios--card{
+                    span{
+                        font-size: 16px;
+                        width: 500px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
