@@ -43,10 +43,11 @@
     }
 
     .c-main__clinicas{
-        padding-top: 50px;
+        margin-top: 50px;
         display: flex;
         justify-content: center;
         flex-direction: column;
+        padding: $padding-360-mobile;
        
         
         h1{
@@ -61,16 +62,19 @@
             font-size: 20px;
             font-style: normal;
             font-weight: 900;
-            line-height: 16.4px; /* 102.5% */
+            line-height: 16.4px;
             letter-spacing: 0.106px;
-
             display: flex;
             flex-direction: row;
+            padding: 20px 0px 20px 0px;
+            border-bottom: 1px solid #e8e7ed;
+            background-color: white;
             justify-content: space-between;
-            gap: 40px;
+            width: 100%;
 
             .icono{
                 transition: transform 0.6s; /* Transición para la rotación */
+                
             }
             
            }
@@ -84,9 +88,10 @@
 
 @media (min-width: $breakpoint-nav-large) {
     .c-main{
-        padding-top: 100px;
+        margin-top: 100px;
+        padding: $padding-R-L-desk;
         .c-main__beneficios{
-           
+            margin-top: 100px;
             .c-main__beneficios--cards{
                 grid-template-columns: 1fr 1fr; /* Dos columnas en desktop */
                 .c-main__beneficios--card{
@@ -96,6 +101,12 @@
                     }
                 }
             }
+        }
+
+        .c-main__clinicas{
+            padding-top: 100px;
+            max-width: 800px;
+            margin: 0 auto;
         }
 
     }

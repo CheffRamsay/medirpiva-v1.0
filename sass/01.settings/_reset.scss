@@ -8,6 +8,10 @@
     scroll-behavior: smooth;
 }
 
+body{
+  font-family: Mont!important;
+}
+
 /*Evitamos problemas con las imagenes*/
 img, picture, video, iframe, figure{
   max-width: 100%;
@@ -16,6 +20,8 @@ img, picture, video, iframe, figure{
   /*Opcional*/object-fit: cover;
   /*Opcional*/object-fit: center center;
 }
+
+
 
 a{
   display: block;
@@ -27,5 +33,9 @@ p a{
 
 li{
   list-style-type: none;
+}
+
+span{
+  font-weight: 600!important;
 }
 
