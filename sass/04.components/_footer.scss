@@ -1,0 +1,86 @@
+.c-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+    background-color: #F7F7F7;
+
+    &__enlaces{
+        ul{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding-top: 30px;
+        } li a{
+            color: $color-blue-light;
+            text-align: center;
+            font-family: 'Mont';
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 22.4px; /* 149.333% */
+            text-decoration: none;
+            text-transform: uppercase;
+            
+        }
+    }
+
+    &__logo{
+        &--item img{
+            width: 200px;
+        }
+    }
+
+    &__barra{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        
+    }
+}
+
+.enlace-lucas{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 20px;
+   border-top: 1px solid $color-blue-light;
+   span{
+    a{
+        color: $color-blue-light;
+        text-align: center;
+        font-family: 'Mont';
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 22.4px; /* 149.333% */
+            text-decoration: none;
+            
+    }
+   }
+}
+
+@media (min-width: $breakpoint-nav-large) {
+    .c-footer{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+        padding: 70px 90px 70px 90px;
+        margin-top: 150px;
+        background-color: #F7F7F7;
+        
+        &__enlaces{
+            ul{
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+            }
+       }
+    }
+}

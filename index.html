@@ -63,13 +63,10 @@
 		<div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav">
 			<li class="nav-item">
-				<a class="nav-link" aria-current="page" href="#">Beneficios</a>
+				<a class="nav-link" aria-current="page" href="#bene">Beneficios</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#">Clinicas</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">Planes</a>
+				<a class="nav-link" href="#clinicas">Clinicas</a>
 			</li>
 			</ul>
 		</div>
@@ -177,14 +174,14 @@
 
 
 <main class="c-main">
-	<section class="c-main__beneficios">
+	<section class="c-main__beneficios" id="bene">
 		<h1>BENEFICIOS</h1>
 		<p>
 			Tu salud es lo más importante, por eso te ofrecemos una amplia gama 
 			de beneficios para que estés siempre protegido.
 		</p>
 
-		<div class="c-main__beneficios--cards">
+		<div class="c-main__beneficios--cards" >
 			<div class="c-main__beneficios--card">
 				<img src="/img/credencial.png" alt="credencial" >
 				<span>Acceso al servicio solo con la credencial, sin bonos ni copagos.</span>
@@ -255,7 +252,7 @@
 		</div>
 	</section>
 
-	<section class="c-main__clinicas">
+	<section class="c-main__clinicas" id="clinicas">
 		<h1>CLINICAS POR ZONA</h1>
 		<div class="accordion" id="accordionExample">
 			<div class="accordion-item">
@@ -436,83 +433,50 @@
 </main>
 
 
-<!--
-
-<main class="conetenedor-main">	
-    <section class="contenedor sobre-nosotros">
-        <h2 class="titulo anim"><strong>MEDICINA PREPAGA EN BUENOS AIRES</strong></h2>
-           	<div class="contenedor-sobre-nosotros anim">
-           		<img src="img/familia.svg" loading="lazy" alt="familia" class="imagen-familia" width="500">
-           		<div class="contenedor-text">
-           		  <p>Cobertura medica en los mejores controles de salud de Capital Federal y Gran Buenos Aires. Cambiate ahora y empeza a ahorrar, consultanos por WhatsApp. Planes para monotributistas, seguro medico para todo el grupo familiar. Responsabilidad, calidad y precio.</p>
-           	    </div>
-           	</div>
-            <h2 class="titulo anim" style="margin-top:80px;"><strong>¿QUIENES SOMOS?</strong></h2>
-           	<div class="quienes-somos">
-                <img src="img/doctores.svg" alt="familia" class="imagen-doc anim" width="750">
-           		<div class="contenedor-text-2 anim">
-                    <p style="margin-top: 0px;">Somos una empresa de medicina prepaga con una amplia trayectoria, avalada por los más de 700.000  afiliados. Te brindamos la oportunidad de contratar un plan que se ajuste a tus necesidades y que te ofrezca la mayor cantidad de beneficios. ​​​​​​​Contamos con una red de más de 204.000 prestadores a nivel nacional, con acceso a consultorios externos, guardias, internación, etc. Tenemos los mejores y con la mejor opción para que puedas cuidarte y cuidar a quien más querés.​​​​​​​Somos profesionales en lo que hacemos y por eso te orientamos para que elijas la opción que se amolde a vos y a tu familia.</p>
-           		</div>
-           	</div>
-    </section>
-    <div class="wave-button">
-		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#001122" fill-opacity="1" d="M0,128L60,133.3C120,139,240,149,360,154.7C480,160,600,160,720,149.3C840,139,960,117,1080,122.7C1200,128,1320,160,1380,176L1440,192L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
-    </div>
-</main>
-
--->
-
-
-
-
 <section class="ws-container">
-	<a class="enlace" id="boton-ws" href="https://api.whatsapp.com/send?phone=541156161836&amp;text=Hola mas info por favor" target="_blank"><img src="img/whatsapp-footer.png" loading="eager" alt="Whatsapp logo" width="20"></a>
+	<a class="enlace" id="boton-ws"  href="https://api.whatsapp.com/send?phone=541156161836&amp;text=Hola mas info por favor" target="_blank"><img style="
+		position: fixed;
+		bottom: 23px;
+		width: 50px;
+		right: 22px;" src="img/whatsapp-footer.png" loading="eager" alt="Whatsapp logo" width="20"></a>
 </section>
 	    
-<footer class="footer">
-	<div class="enlace-icono">
-		<a href="https://www.medipriva.com/"><img src="img/logo-solo.png" alt="Logo-medipriva"></a>
-	</div>
-	<div class="enlaces-footer">
+<footer class="c-footer">
+
+	<div class="c-footer__enlaces">
 		<ul>
-			<li><a href="#inicio">Inicio</a></li>
-			<li><a href="#contacto">Contacto</a></li>
+			
+			
 			<li><a href="#bene">Beneficios</a></li>
 			<li><a href="#clinicas">Clínicas</a></li>
 		</ul>
 	</div>
-	<!--
-	<div class="span-footer">
-		<span>
-			Contá con el mejor asesoramiento gratuito, para la más variada cobertura médica y 
-			elegí la opción que mejor se adapte a tu necesidad. su consulta no nos molesta.
-			Medipriva Salud es totalmente independiente de las empresas de medicina prepaga y 
-			obras sociales y no asegura la disponibilidad, contratación o servicios detallados en cada plan.
-			Las clínicas asignadas por zona pueden variar ya que se busca mejorar la calidad en el servicio.
-		</span>
+
+	<div class="c-footer__logo">
+		<a class="c-footer__logo--item" href="https://www.medipriva.com/">
+			<img src="img/logo-footer.png" alt="Logo-medipriva">
+		</a>
 	</div>
 
-	-->
-
-	<div>
-		<div class="barra-con-footer">
-			<a href="https://www.instagram.com/medipriva/?hl=es-la" target="_blank"><img src="img/instagram-blanco.svg" alt="Instagram"></a>
-			<a href="https://www.facebook.com/mediprivasalud" target="_blank"><img src="img/facebook-blanco.svg" alt="Facebook" style="padding-left: 2px;"></a>
-			<a href="https://api.whatsapp.com/send?phone=541156161836&text=Solicito%20informacion%20" target="_blank"><img src="img/whatsapp-blanco.svg" alt="WhatsApp"></a>
-			<a href="https://web.telegram.org/#/im?p=@sancorsaludstaffmedico" target="_blank"><img src="img/telegrama-blanco.svg" alt="Telegram"></a>
-		</div>
+    <div class="c-footer__barra">
+			<a class="c-footer__barra--item" href="https://www.instagram.com/medipriva/?hl=es-la" target="_blank">
+				<img src="img/instagram-footer.png" alt="Instagram">
+			</a>
+			
+			<a href="https://www.facebook.com/mediprivasalud" target="_blank"><img src="img/facebook-footer.png" alt="Facebook" style="padding-left: 2px;"></a>
+			<a href="https://api.whatsapp.com/send?phone=541156161836&text=Solicito%20informacion%20" target="_blank"><img src="img/ws-footer.png" alt="WhatsApp"></a>
+			<a href="https://web.telegram.org/#/im?p=@sancorsaludstaffmedico" target="_blank"><img src="img/telegram-footer.png" alt="Telegram"></a>
 	</div>
+	
 	<div class="border-1">
 	
 	</div>
-	<div class="enlace-lucas">
-		<span><a href="https://lvcas-ca.web.app/" target="_blank">Desarrolado por <strong>Lucas</strong></a></span>
-	</div>
+	
 </footer>
-			
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<!--JavaScript de Bootstrap -->
+<div class="enlace-lucas">
+	<span><a href="https://lvcas-ca.web.app/" target="_blank">Desarrolado por <strong>Lucas</strong></a></span>
+</div>			
+
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>   
 		   
 		
