@@ -24,7 +24,7 @@ function send_whatsapp($message){
         //$apikey="6090736";       // Enter your personal apikey received in step 3 above
 
        $phone="+5491124635748";   //Enter your phone number here
-       $apikey="141361";          //Enter your personal apikey received in step 3 above
+       $apikey="5329204";          //Enter your personal apikey received in step 3 above
 
         $url='https://api.callmebot.com/whatsapp.php?source=php&phone='.$phone.'&text='.urlencode($message).'&apikey='.$apikey;
 

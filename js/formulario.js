@@ -125,7 +125,7 @@ if(campos.nombre  /*&& campos.dni*/ && campos.correo && campos.telefono && campo
     //Se envia el mensaje al numero ws con los datos del formulario
     fetch ('php/envio-ws.php',peticion)  
     .then( respuestaWs =>{
-        //console.log(respuestaWs.status);
+        console.log(respuestaWs.status);
         if(respuestaWs.status==200){
             
             //Si el mensaje de ws se envia correctamente se guarda en la base de datos de Google Sheets
@@ -133,8 +133,8 @@ if(campos.nombre  /*&& campos.dni*/ && campos.correo && campos.telefono && campo
             .then(respuestaGoogleSheets =>{
                 console.log(respuestaGoogleSheets);
                 if(respuestaGoogleSheets.status==201){
-                    window.location.href = "https://medipriva.com.ar/mensajeEnviado.html";
-                    //console.log("Mensaje enviado y subido a la base de datos")
+                    //ñwindow.location.href = "https://medipriva.com.ar/mensajeEnviado.html";
+                    console.log("Mensaje enviado y subido a la base de datos")
                 }
             })
         }else{
@@ -150,7 +150,7 @@ if(campos.nombre  /*&& campos.dni*/ && campos.correo && campos.telefono && campo
         }
     }).catch(error =>console.warn('error', error));
 }else{
-    //console.log("Formulario incompleo o con errores");
+    console.log("Formulario incompleo o con errores");
     btnEnviar.disabled = false;
     btnEnviar.innerHTML = "ENVIAR";
     swal({ 

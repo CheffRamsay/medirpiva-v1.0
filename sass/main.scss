@@ -6,7 +6,6 @@
 @import "./04.components/all-components.scss";
 @import "./05.objects/objects.scss";
 
-
 /*Elimina bordes*/
 * {
   margin: 0;
@@ -17,18 +16,8 @@
   scroll-behavior: smooth;
 }
 
-
-
-font-face {
-  font-family: "Montserrat", sans-serif;
-  src: url("/settings/Montserrat-Bold.ttf") format("truetype");
-  src: url("/settings/Montserrat-Bold.ttf") format("truetype");
-  src: url("/settings/Montserrat-SemiBold.ttf") format("truetype");
-  src: url("/settings/Montserrat-Thin.ttf") format("truetype");
-}
-
 body {
-  font-family: 'Mont'!important;
+  font-family: Mont !important;
 }
 
 /*Evitamos problemas con las imagenes*/
@@ -121,7 +110,7 @@ font-face {
 }
 
 .nav-item a {
-  font-family: "Montserrat";
+  font-family: "Mont";
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -160,6 +149,9 @@ font-face {
 
 .formulario__input-error-activo {
   display: block;
+  text-align: left;
+  color: var(--bs-danger);
+  
 }
 
 .c-header .c-header__flex .c-formulario form {
@@ -213,7 +205,7 @@ font-face {
 .c-main .c-main__beneficios p {
   color: #5C5776;
   text-align: center;
-  font-family: "Montserrat";
+  font-family: Mont;
   font-size: 20;
   font-style: normal;
   font-weight: 700;
@@ -240,7 +232,7 @@ font-face {
 .c-main .c-main__beneficios .c-main__beneficios--cards .c-main__beneficios--card span {
   text-align: left;
   color: #5C5776;
-  font-family: "Montserrat";
+  font-family: Mont;
   font-size: 15px;
   font-style: normal;
   font-weight: 500;
@@ -268,7 +260,7 @@ font-face {
 
 .c-main .c-main__clinicas .accordion-header button {
   color: #6B6B6B;
-  font-family: "Montserrat";
+  font-family: Mont;
   font-size: 20px;
   font-style: normal;
   font-weight: 900;
@@ -315,7 +307,7 @@ font-face {
 .o-text-h1 {
   color: #FFF;
   text-align: center;
-  font-family: 'Montserrat';
+  font-family: Mont;
   font-size: 48px;
   font-style: normal;
   font-weight: 900;
@@ -326,7 +318,7 @@ font-face {
 .o-text-h2 {
   color: #FFF;
   text-align: center;
-  font-family: "Montserrat";
+  font-family: Mont;
   font-size: 32px;
   font-style: normal;
   font-weight: 900;
@@ -337,7 +329,7 @@ font-face {
   .o-text-h1 {
     color: #FFF;
     text-align: center;
-    font-family: "Montserrat";
+    font-family: Mont;
     font-size: 56px;
     font-style: normal;
     font-weight: 900;
@@ -1502,7 +1494,7 @@ progress {
   width: 100%;
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.5;
   color: var(--bs-body-color);
   background-color: var(--bs-body-bg);
