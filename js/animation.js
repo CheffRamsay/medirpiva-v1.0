@@ -10,9 +10,19 @@ export function  animation() {
     const $elipse2 = d.querySelector(".elipse-2");
     const $familiaImg = d.querySelector(".familiaSlider");
 
-
+    w.addEventListener('load', e =>{
+        $loader.parentElement.removeChild($loader);
+      // $elipse.classList.add("fadeInUp");
+        //$elipse2.classList.add("fadeInUp1");
+        //$familiaImg.classList.add("fadeInUp1");
+        //$rectanguloDialog.classList.add("fadeInUp2");
+        //$banner.classList.add("shadow-drop-2-center");
+      });
+    
+    
+    
     //Recibe una callback y una serie de opciones 
-//const observer = new IntersectionObserver(cb, {});
+    //const observer = new IntersectionObserver(cb, {});
 
     //A cada section le agregamos atributo observe
     sectionsToAnimate.forEach(el => {
@@ -20,12 +30,5 @@ export function  animation() {
       observer.observe(el);
     })
     
-    w.addEventListener('load', e =>{
-      $loader.parentElement.removeChild($loader);
-     // $elipse.classList.add("fadeInUp");
-      //$elipse2.classList.add("fadeInUp1");
-      //$familiaImg.classList.add("fadeInUp1");
-      //$rectanguloDialog.classList.add("fadeInUp2");
-      //$banner.classList.add("shadow-drop-2-center");
-    });
+ 
 }

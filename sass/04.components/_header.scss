@@ -1,5 +1,5 @@
 .c-header{
-    background-image: url('img/backgreen.png');
+    
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0px 16px 40px 16px;
@@ -16,7 +16,7 @@
 
 @media (min-width: $breakpoint-nav-large) {
     .c-header{
-        background-image: url('img/gradient-green.png');
+ 
         background-repeat: no-repeat;
         background-size: cover;
         padding: $padding-R-L-desk;

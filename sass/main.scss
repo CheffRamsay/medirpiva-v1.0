@@ -47,24 +47,32 @@ span {
   font-weight: 600 !important;
 }
 
+input::placeholder{
+  color: var(--bs-dark-border-subtle)!important;
+}
+
+textarea::placeholder{
+  color: var(--bs-dark-border-subtle)!important;
+}
+
 font-face {
   font-family: "Mont";
-  src: url("../settings/Mont-Black.ttf") format("truetype");
-  src: url("../settings/Mont-Bold.ttf") format("truetype");
-  src: url("../settings/Mont-Heavy.ttf") format("truetype");
-  src: url("../settings/Mont-SemiBold.ttf") format("truetype");
+  src: url("../font/Mont-Black.ttf") format("truetype");
+  src: url("../font/Mont-Bold.ttf") format("truetype");
+  src: url("../font/Mont-Heavy.ttf") format("truetype");
+  src: url("../font/Mont-SemiBold.ttf") format("truetype");
 }
 
 font-face {
   font-family: "Montserrat", sans-serif;
-  src: url("../settings/Montserrat-Bold.ttf") format("truetype");
-  src: url("../settings/Montserrat-Bold.ttf") format("truetype");
-  src: url("../settings/Montserrat-SemiBold.ttf") format("truetype");
-  src: url("../settings/Montserrat-Thin.ttf") format("truetype");
+  src: url("../font/Montserrat-Bold.ttf") format("truetype");
+  src: url("../font/Montserrat-ExtraBold.ttf") format("truetype");
+  src: url("../font/Montserrat-SemiBold.ttf") format("truetype");
+  src: url("../font/Montserrat-Thin.ttf") format("truetype");
 }
 
 .c-header {
-  background-image: url("img/backgreen.png");
+  background-image: url("img/ba.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0px 16px 40px 16px;
@@ -78,7 +86,7 @@ font-face {
 
 @media (min-width: 1000px) {
   .c-header {
-    background-image: url("img/gradient-green.png");
+    background-image: url("img/ba.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0px 30px 0px 30px;
@@ -134,10 +142,10 @@ font-face {
   }
   .nav-item a {
     font-weight: 500;
-    color: rgba(20, 0, 90, 0.644);
+   
   }
   .nav-item a:hover {
-    color: #13005A;
+    
   }
 }
 .formulario__input-error {
@@ -158,6 +166,9 @@ font-face {
   padding: 40px;
   border-radius: 10px;
   background-color: #FFFFFF;
+  position: relative;
+  z-index: 1;
+  top: 0;
 }
 
 .c-header .c-header__flex .c-formulario form .afiliadoConsulta {
@@ -165,14 +176,18 @@ font-face {
 }
 
 .c-header .c-header__flex .c-formulario form .form-group .label-input-container {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 @media (min-width: 1000px) {
   .c-header .c-header__flex .c-formulario {
     width: 360px;
+    form{
+         top: -40px;
+    }
   }
 }
+
 @media (min-width: 1200px) {
   .c-header .c-header__flex .c-formulario {
     width: 450px;
@@ -192,7 +207,7 @@ font-face {
 }
 
 .c-main .c-main__beneficios h1 {
-  color: #8C989C;
+  color: $color--violet;
   text-align: center;
   font-family: Mont;
   font-size: 40;
@@ -248,7 +263,7 @@ font-face {
 }
 
 .c-main .c-main__clinicas h1 {
-  color: #8C989C;
+  color: $color--violet;
   text-align: center;
   font-family: Mont;
   font-size: 40;
@@ -1327,6 +1342,7 @@ textarea {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+
 }
 
 button,
@@ -1503,7 +1519,9 @@ progress {
   appearance: none;
   border-radius: var(--bs-border-radius);
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+ 
 }
+
 
 @media (prefers-reduced-motion: reduce) {
   .form-control {

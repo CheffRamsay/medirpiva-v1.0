@@ -9,6 +9,7 @@
         text-align: center;
 
         h1{
+            
             @include h2(40);
         }
 
