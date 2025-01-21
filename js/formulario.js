@@ -167,6 +167,10 @@ selectorSosAfiliado.addEventListener("change", () => {
 
     enlace.style.display = (seleccion === "1") ? "block" : "none";
     form.style.display = (seleccion === "2") ? "block" : "none";
+
+   
+    document.documentElement.clientWidth > 1000 && seleccion === "2"  ? formulario.classList.add("translateToTop") : formulario.classList.remove("translateToTop");
+    
     
 });
        
