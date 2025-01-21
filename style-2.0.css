@@ -41,22 +41,6 @@ span {
   font-weight: 600 !important;
 }
 
-font-face {
-  font-family: "Urbanist", serif;
-  src: url("../settings/Mont-Black.ttf") format("truetype");
-  src: url("../settings/Mont-Bold.ttf") format("truetype");
-  src: url("../settings/Mont-Heavy.ttf") format("truetype");
-  src: url("../settings/Mont-SemiBold.ttf") format("truetype");
-}
-
-font-face {
-  font-family: "Montserrat", sans-serif;
-  src: url("../settings/Montserrat-Bold.ttf") format("truetype");
-  src: url("../settings/Montserrat-Bold.ttf") format("truetype");
-  src: url("../settings/Montserrat-SemiBold.ttf") format("truetype");
-  src: url("../settings/Montserrat-Thin.ttf") format("truetype");
-}
-
 p {
   color: #5C5776;
   text-align: center;
@@ -203,7 +187,7 @@ p {
 .c-main .c-main__beneficios h1 {
   color: #8C989C;
   text-align: center;
-  font-family: Mont;
+  font-family: "Urbanist", serif;
   font-size: 40;
   font-style: normal;
   font-weight: 900;
@@ -213,7 +197,7 @@ p {
 .c-main .c-main__beneficios p {
   color: #5C5776;
   text-align: center;
-  font-family: Mont;
+  font-family: "Urbanist", serif;
   font-size: 20;
   font-style: normal;
   font-weight: 700;
@@ -236,7 +220,7 @@ p {
 .c-main .c-main__beneficios .c-main__beneficios--cards .c-main__beneficios--card span {
   text-align: left;
   color: #5C5776;
-  font-family: Mont;
+  font-family: "Urbanist", serif;
   font-size: 15px;
   font-style: normal;
   font-weight: 500;
@@ -252,7 +236,7 @@ p {
 .c-main .c-main__clinicas h1 {
   color: #8C989C;
   text-align: center;
-  font-family: Mont;
+  font-family: "Urbanist", serif;
   font-size: 40;
   font-style: normal;
   font-weight: 900;
@@ -261,7 +245,7 @@ p {
 }
 .c-main .c-main__clinicas .accordion-header button {
   color: #6B6B6B;
-  font-family: Mont;
+  font-family: "Urbanist", serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 900;
@@ -378,7 +362,7 @@ p {
 .o-text-h1 {
   color: #FFF;
   text-align: center;
-  font-family: Mont;
+  font-family: "Urbanist", serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 900;
@@ -389,7 +373,7 @@ p {
 .o-text-h2 {
   color: #FFF;
   text-align: center;
-  font-family: Mont;
+  font-family: "Urbanist", serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 900;
@@ -403,7 +387,7 @@ p {
   height: 48px;
   color: #FFF;
   text-align: center;
-  font-family: Mont;
+  font-family: "Urbanist", serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -414,7 +398,7 @@ p {
   .o-text-h1 {
     color: #FFF;
     text-align: center;
-    font-family: Mont;
+    font-family: "Urbanist", serif;
     font-size: 56px;
     font-style: normal;
     font-weight: 900;
@@ -618,7 +602,7 @@ textarea::placeholder {
 .c-main .c-main__beneficios h1 {
   color: #aa1654;
   text-align: center;
-  font-family: Mont;
+  font-family: "Urbanist", serif;
   font-size: 40;
   font-style: normal;
   font-weight: 900;
@@ -629,7 +613,7 @@ textarea::placeholder {
 .c-main .c-main__beneficios p {
   color: #5C5776;
   text-align: center;
-  font-family: Mont;
+  font-family: "Urbanist", serif;
   font-size: 20;
   font-style: normal;
   font-weight: 700;
@@ -656,7 +640,7 @@ textarea::placeholder {
 .c-main .c-main__beneficios .c-main__beneficios--cards .c-main__beneficios--card span {
   text-align: left;
   color: #5C5776;
-  font-family: Mont;
+  font-family: "Urbanist", serif;
   font-size: 15px;
   font-style: normal;
   font-weight: 500;
@@ -674,7 +658,7 @@ textarea::placeholder {
 .c-main .c-main__clinicas h1 {
   color: #aa1654;
   text-align: center;
-  font-family: Mont;
+  font-family: "Urbanist", serif;
   font-size: 40;
   font-style: normal;
   font-weight: 900;
@@ -684,7 +668,7 @@ textarea::placeholder {
 
 .c-main .c-main__clinicas .accordion-header button {
   color: #6B6B6B;
-  font-family: Mont;
+  font-family: "Urbanist", serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 900;
